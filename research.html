@@ -100,7 +100,7 @@
 <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-surface/90 backdrop-blur-md border-b border-slate-200 dark:border-outline-variant shadow-sm transition-colors duration-300">
 <div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
 <div class="font-headline-section text-headline-section font-bold text-emerald-600 dark:text-primary">Lokesh Kumar, PhD</div>
-<div class="flex items-center gap-4 md:gap-8">
+<div class="flex items-center gap-4 md:gap-8"><button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 dark:text-on-surface-variant hover:bg-slate-200 dark:hover:bg-surface-variant rounded-full transition-colors"><span class="material-symbols-outlined">menu</span></button>
 <div class="hidden md:flex items-center gap-8"><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="index.html">Home</a><a class="font-label-ui text-label-ui text-emerald-600 dark:text-primary border-b-2 border-emerald-600 dark:border-primary pb-1" href="research.html">Research</a><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="publications.html">Publications</a><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="contact.html">Contact</a></div>
 <button aria-label="Toggle Dark Mode" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-surface-variant transition-colors text-slate-600 dark:text-on-surface-variant" id="theme-toggle">
 <span class="material-symbols-outlined dark:hidden">dark_mode</span>
@@ -109,7 +109,7 @@
 <a class="hidden md:inline-block bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-4 py-2 rounded-lg font-label-ui text-label-ui font-semibold active:scale-95 transition-transform" href="#">Download CV</a>
 </div>
 </div>
-</nav>
+<div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white dark:bg-surface border-b border-slate-200 dark:border-outline-variant p-gutter flex flex-col gap-4 shadow-lg"><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="index.html">Home</a><a class="font-label-ui text-label-ui text-emerald-600 dark:text-primary" href="research.html">Research</a><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="publications.html">Publications</a><a class="font-label-ui text-label-ui text-slate-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="contact.html">Contact</a><a class="bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-4 py-2 rounded-lg font-label-ui text-label-ui font-semibold text-center" href="#">Download CV</a></div></nav>
 <!-- Hero Section -->
 <header class="pt-32 pb-16 px-gutter max-w-container-max mx-auto text-center relative overflow-hidden"><div class="mb-12 relative group overflow-hidden rounded-xl border border-slate-200 dark:border-outline-variant shadow-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9A6Rqehxilba0dLRDCkEn2Yh2YCL_0w0Jj7I1Y0o97LrV5QFoKKWqrhWKCwZP44TX-5GwUsWTSZf4qOjgOUjxOdE4zad7S-CtmrGhDvnWnYM_RNlaQoCA3EYVgk1Uw8K6upPWD1nIC5jgViECVsb8fHx5Pn1LUscpJo1bIezUxDiEhlCPv5DUW_TMp9Vd9Zyh971xLahNNlgiamC2iaxyk6iunUvPYvrgopy5lx0_RH_F8U735M00" alt="A high-end, futuristic semiconductor research laboratory with emerald green lighting." class="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6"><p class="text-white text-label-mono text-sm">Advanced Semiconductor Research Laboratory</p></div></div>
 <div class="absolute -top-24 -left-24 w-64 h-64 bg-emerald-500/10 dark:bg-primary/10 rounded-full blur-3xl animate-pulse-subtle"></div>
@@ -268,4 +268,4 @@
             document.documentElement.classList.toggle('dark');
         });
     </script>
-</body></html>
+<script>const menuBtn = document.getElementById('mobile-menu-btn'); const mobileMenu = document.getElementById('mobile-menu'); if (menuBtn && mobileMenu) { menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }</script></body></html>
