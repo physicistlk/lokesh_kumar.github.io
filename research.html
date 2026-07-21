@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Highlights - Lokesh Kumar, PhD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .nav-link { transition: color 0.2s; cursor: pointer; }
+    .nav-link:hover { color: #34d399; /* emerald-400 */ }
+    
+    /* Smooth fade in for sections */
+    .page-section {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Custom scrollbar for a sleeker look */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="w-full max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center border-b border-zinc-800 gap-4 md:gap-0 sticky top-0 bg-zinc-950/90 backdrop-blur-sm z-50">
+    <a href="index.html" class="text-2xl font-semibold hover:text-emerald-400 transition-colors">Lokesh Kumar, PhD</a>
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm">
+      <a href="index.html" class="nav-link text-zinc-400">Home & Bio</a>
+      <a href="research.html" class="nav-link text-emerald-400 font-medium">Research Highlights</a>
+      <a href="publications.html" class="nav-link text-zinc-400">Publications & Patents</a>
+      <a href="contact.html" class="nav-link text-zinc-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow">
+      <div class="page-section block">
+          <section class="max-w-4xl mx-auto px-6 py-16">
+            <h1 class="text-4xl font-semibold mb-2 text-white">Research Highlights</h1>
+            <h2 class="text-xl text-zinc-400 mb-12">News, Updates & Milestones</h2>
+
+            <div class="space-y-12">
+              <div class="relative pl-6 border-l-2 border-emerald-400">
+                <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></div>
+                <p class="text-emerald-400 text-sm font-bold tracking-wide uppercase">April 2026</p>
+                <p class="text-xl font-medium mt-2 leading-snug text-white">Neuromorphic Work Accepted for Publication</p>
+                <p class="text-zinc-300 mt-2 italic">"Bio-Realistic Emulation of Complex Synaptic Plasticity and Logic via a Fully Screen-Printed Flexible Neuromorphic Transistor"</p>
+                <p class="text-zinc-400 mt-3 leading-relaxed">First-author paper officially accepted in <span class="font-medium text-emerald-300">Applied Materials Today</span>. Demonstrates Ebbinghaus forgetting curve, STDP, paired-pulse facilitation, and OR logic in a low-energy (~24 nJ) fully screen-printed OECT.</p>
+              </div>
+
+              <div class="relative pl-6 border-l-2 border-zinc-800">
+                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
+                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2025</p>
+                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Carbon Publication</p>
+                <p class="text-zinc-400 mt-2 leading-relaxed">First-author paper "Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device Based on Ion Gel Dielectric" published in <span class="italic">Carbon</span> (IF 11.6).</p>
+              </div>
+
+              <div class="relative pl-6 border-l-2 border-zinc-800">
+                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
+                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2024</p>
+                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Chemical Science Publication</p>
+                <p class="text-zinc-400 mt-2 leading-relaxed">First-author work on an ultrasensitive OECT biosensor for aromatic water pollutants published in <span class="italic">Chemical Science</span> (IF 9.8).</p>
+              </div>
+              
+              <div class="relative pl-6 border-l-2 border-transparent">
+                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
+                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2024</p>
+                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Conference Highlights</p>
+                <p class="text-zinc-400 mt-2 leading-relaxed">Presented at the Indo-UK Biosensor Workshop  (NanoBios 2024).</p>
+              </div>
+            </div>
+          </section>
+      </div>
+  </main>
+
+  <footer class="w-full mx-auto px-6 py-8 text-center text-zinc-600 text-sm border-t border-zinc-900 mt-auto bg-zinc-950">
+    <p>Lokesh Kumar, PhD • Experimental Semiconductor Physicist</p>
+    <p class="mt-2 text-zinc-700">Mumbai, India • Updated April 2026</p>
+  </footer>
+
+</body>
+</html>

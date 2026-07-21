@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokesh Kumar, PhD - Home & Bio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .nav-link { transition: color 0.2s; cursor: pointer; }
+    .nav-link:hover { color: #34d399; /* emerald-400 */ }
+    
+    /* Smooth fade in for sections */
+    .page-section {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Custom scrollbar for a sleeker look */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="w-full max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center border-b border-zinc-800 gap-4 md:gap-0 sticky top-0 bg-zinc-950/90 backdrop-blur-sm z-50">
+    <a href="index.html" class="text-2xl font-semibold hover:text-emerald-400 transition-colors">Lokesh Kumar, PhD</a>
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm">
+      <a href="index.html" class="nav-link text-emerald-400 font-medium">Home & Bio</a>
+      <a href="research.html" class="nav-link text-zinc-400">Research Highlights</a>
+      <a href="publications.html" class="nav-link text-zinc-400">Publications & Patents</a>
+      <a href="contact.html" class="nav-link text-zinc-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow">
+      
+      <!-- ================= HOME SECTION ================= -->
+      <div class="page-section block">
+          <!-- Hero -->
+          <section class="max-w-5xl mx-auto px-6 pt-20 pb-12">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+              <div class="md:w-2/3">
+                <div class="inline-block px-3 py-1 mb-4 rounded-full bg-emerald-400/10 text-emerald-400 text-sm font-medium border border-emerald-400/20">
+                    Experimental Semiconductor Physicist
+                </div>
+                <h1 class="text-5xl sm:text-6xl font-bold tracking-tighter mb-4 text-white">Lokesh Kumar, PhD</h1>
+                <p class="text-xl sm:text-2xl text-emerald-400 mb-6 font-medium">Assistant Professor</p>
+                <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl leading-relaxed">
+                    Specializing in Organic Electrochemical Transistors (OECTs), Oxide Semiconductors, Neuromorphic Computing, and Bioelectronic Sensors.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center text-zinc-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-building-columns text-emerald-500"></i> NIT Calicut
+                    </div>
+                    <span class="hidden sm:inline text-zinc-700">•</span>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-globe text-emerald-500"></i> Contact for Research in Semiconductors 
+                    </div>
+                </div>
+              </div>
+              <div class="md:w-1/3 w-full max-w-sm mx-auto">
+                <div class="rounded-3xl shadow-2xl w-full aspect-[3/4] bg-zinc-900 flex items-center justify-center overflow-hidden border border-zinc-800 relative group">
+                    <img src="your-photo.jpg" alt="Lokesh Kumar" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden flex-col items-center gap-4 text-zinc-600 w-full h-full justify-center bg-zinc-900">
+                        <i class="fa-solid fa-user-tie text-6xl"></i>
+                        <span class="text-sm">Profile Photo</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bio & Education -->
+          <section class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/50">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Bio -->
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-3">
+                        <i class="fa-solid fa-microscope text-emerald-400"></i> About My Research
+                    </h2>
+                    <div class="prose prose-invert max-w-none text-zinc-300 space-y-4 leading-relaxed">
+                        <p>Experimental physicist with over 8 years of hands-on experience in thin-film transistor (TFT) fabrication and characterization. My early PhD research focused on solution-processed oxide semiconductors (ZnO, IGZO, In₂O₃) and high-k dielectrics.</p>
+                        <p>Currently, my work expands into low-voltage organic transistors (OECTs), printed flexible neuromorphic devices emulating synaptic plasticity, and bioelectronic platforms for cancer-associated extracellular vesicle (EV) detection.</p>
+                        <p>Prior to joining at NIT Calicut, I was leading the technical investigation for the Indo-German Science & Technology Centre (IGSTC) project, collaborating with the Karlsruhe Institute of Technology (KIT) to integrate dip-pen nanolithography lipid microarrays on transistor gates.</p>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-emerald-400"></i> Education
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l border-zinc-800">
+                            <div class="absolute w-3 h-3 bg-emerald-400 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
+                            <h3 class="text-lg font-medium text-white">PhD, Semiconductor Physics</h3>
+                            <p class="text-emerald-400 text-sm mb-1">IIT Bombay (2018 - 2024)</p>
+                            <p class="text-zinc-400 text-sm">Thesis: "Organic Electrochemical Transistors for Neuromorphic Devices and Sensors"</p>
+                        </div>
+                        <div class="relative pl-6 border-l border-zinc-800">
+                            <div class="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
+                            <h3 class="text-lg font-medium text-white">MSc, Semiconductor Physics</h3>
+                            <p class="text-emerald-400 text-sm mb-1">IIT Roorkee (2014 - 2016)</p>
+                            <p class="text-zinc-400 text-sm">1st Division. Project on 2D spin simulation in Python.</p>
+                        </div>
+                        <div class="relative pl-6 border-l border-transparent">
+                            <div class="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
+                            <h3 class="text-lg font-medium text-white">BSc, Physics</h3>
+                            <p class="text-emerald-400 text-sm">St. Stephen's College, Delhi University (2011 - 2014)</p>
+                            <p class="text-zinc-400 text-sm">1st Division.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Technical Expertise -->
+          <section class="max-w-5xl mx-auto px-6 py-12 mb-12 border-t border-zinc-800/50">
+             <h2 class="text-2xl font-semibold mb-8 text-white flex items-center gap-3">
+                 <i class="fa-solid fa-microchip text-emerald-400"></i> Technical Expertise
+             </h2>
+             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                 
+                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
+                     <i class="fa-solid fa-layer-group text-2xl text-zinc-400 mb-4 block"></i>
+                     <h3 class="text-white font-medium mb-2">Fabrication & Cleanroom</h3>
+                     <p class="text-sm text-zinc-400 leading-relaxed">Photolithography, Mask Aligners (SUSS MJB4), E-beam Evaporation, Plasma Etching (Nordson AP-300), Spin Coating.</p>
+                 </div>
+
+                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
+                     <i class="fa-solid fa-print text-2xl text-zinc-400 mb-4 block"></i>
+                     <h3 class="text-white font-medium mb-2">Printed Electronics</h3>
+                     <p class="text-sm text-zinc-400 leading-relaxed">Screen Printing, Inkjet Printing (JetLab 4), and Aerosol Jet Printing (Optomec 5X) for flexible electronics.</p>
+                 </div>
+
+                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
+                     <i class="fa-solid fa-chart-line text-2xl text-zinc-400 mb-4 block"></i>
+                     <h3 class="text-white font-medium mb-2">Characterization</h3>
+                     <p class="text-sm text-zinc-400 leading-relaxed">Parameter Analyzers (Keithley 4200-SCS, Keysight 2900A), AutoLAB, EIS, Cyclic Voltammetry.</p>
+                 </div>
+
+                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
+                     <i class="fa-solid fa-code text-2xl text-zinc-400 mb-4 block"></i>
+                     <h3 class="text-white font-medium mb-2">Software & Modeling</h3>
+                     <p class="text-sm text-zinc-400 leading-relaxed">Silvaco Atlas (TCAD), ALPS, Python (2D Spin Simulation), LabView, Fortran, C++.</p>
+                 </div>
+
+             </div>
+          </section>
+      </div>
+  </main>
+
+  <footer class="w-full mx-auto px-6 py-8 text-center text-zinc-600 text-sm border-t border-zinc-900 mt-auto bg-zinc-950">
+    <p>Lokesh Kumar, PhD • Experimental Semiconductor Physicist</p>
+    <p class="mt-2 text-zinc-700">Mumbai, India • Updated April 2026</p>
+  </footer>
+
+</body>
+</html>
