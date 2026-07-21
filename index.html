@@ -115,11 +115,9 @@
 <a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
 <a class="cursor-pointer active:scale-95 transition-transform bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-4 py-2 rounded-lg font-label-ui inline-block" href="#">Download CV</a>
 </div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary text-3xl">menu</span>
+<div class="md:hidden"><button id="mobile-menu-btn" class="p-2 text-emerald-600 dark:text-primary focus:outline-none"><span class="material-symbols-outlined text-3xl">menu</span></button></div>
 </div>
-</div>
-</nav>
+</nav><div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-[60] bg-white dark:bg-background p-gutter flex flex-col gap-8 pt-24"><button id="mobile-menu-close" class="absolute top-4 right-4 p-2 text-gray-500 dark:text-on-surface-variant"><span class="material-symbols-outlined text-3xl">close</span></button><nav class="flex flex-col gap-6"><a class="font-label-ui text-2xl text-emerald-600 dark:text-primary" href="index.html">Home</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="research.html">Research</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="publications.html">Publications</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="contact.html">Contact</a></nav><a class="bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-6 py-4 rounded-lg font-label-ui text-center text-xl" href="#">Download CV</a></div>
 <main class="pt-16">
 <!-- Hero Section -->
 <section class="relative min-h-[70vh] flex items-center overflow-hidden">
@@ -341,4 +339,4 @@
             observer.observe(el);
         });
     </script>
-</body></html>
+<script>const menuBtn = document.getElementById('mobile-menu-btn'); const closeBtn = document.getElementById('mobile-menu-close'); const mobileMenu = document.getElementById('mobile-menu'); if (menuBtn && mobileMenu) { menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }); } if (closeBtn && mobileMenu) { closeBtn.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }); } const mobileLinks = mobileMenu.querySelectorAll('nav a'); mobileLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }); });</script></body></html>
