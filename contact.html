@@ -1,329 +1,186 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact | Lokesh Kumar, PhD</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "primary": "#5af0b3",
-                    "error": "#ffb4ab",
-                    "secondary": "#4edea3",
-                    "background": "#131315",
-                    "on-error": "#690005",
-                    "tertiary-fixed-dim": "#ffb787",
-                    "text-dim": "#52525b",
-                    "secondary-fixed": "#6ffbbe",
-                    "inverse-on-surface": "#313032",
-                    "on-background": "#e5e1e4",
-                    "primary-fixed": "#68fcbf",
-                    "surface-container-highest": "#353437",
-                    "text-primary": "#ffffff",
-                    "on-secondary-fixed": "#002113",
-                    "error-container": "#93000a",
-                    "on-surface": "#e5e1e4",
-                    "on-tertiary-fixed": "#311300",
-                    "on-surface-variant": "#bbcac0",
-                    "surface-tint": "#45dfa4",
-                    "outline": "#85948b",
-                    "tertiary-fixed": "#ffdcc7",
-                    "on-secondary": "#003824",
-                    "primary-fixed-dim": "#45dfa4",
-                    "surface-container-high": "#2a2a2c",
-                    "tertiary": "#ffccad",
-                    "text-muted": "#a1a1aa",
-                    "inverse-primary": "#006c4b",
-                    "tertiary-container": "#ffa668",
-                    "surface-card": "#18181b",
-                    "secondary-fixed-dim": "#4edea3",
-                    "surface-container-lowest": "#0e0e10",
-                    "on-error-container": "#ffdad6",
-                    "outline-variant": "#3c4a42",
-                    "on-primary": "#003825",
-                    "surface-bright": "#39393b",
-                    "secondary-container": "#00a572",
-                    "inverse-surface": "#e5e1e4",
-                    "surface-dim": "#131315",
-                    "on-secondary-fixed-variant": "#005236",
-                    "on-primary-container": "#00563b",
-                    "on-tertiary-container": "#783901",
-                    "on-tertiary-fixed-variant": "#723600",
-                    "surface-variant": "#353437",
-                    "surface-container-low": "#1c1b1d",
-                    "on-primary-fixed": "#002114",
-                    "border-muted": "#27272a",
-                    "on-primary-fixed-variant": "#005137",
-                    "primary-container": "#34d399",
-                    "surface": "#131315",
-                    "surface-container": "#201f22",
-                    "on-secondary-container": "#00311f",
-                    "on-tertiary": "#502400",
-                    "text-secondary": "#e4e4e7"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "container-max": "1024px",
-                    "gutter": "1.5rem",
-                    "card-gap": "1.5rem",
-                    "element-standard": "1rem",
-                    "element-tight": "0.5rem",
-                    "section-v-space": "5rem"
-            },
-            "fontFamily": {
-                    "label-mono": ["JetBrains Mono"],
-                    "display-hero": ["Hanken Grotesk"],
-                    "label-ui": ["Inter"],
-                    "body-intro": ["Inter"],
-                    "headline-subsection": ["Hanken Grotesk"],
-                    "headline-section": ["Hanken Grotesk"],
-                    "display-hero-mobile": ["Hanken Grotesk"],
-                    "body-standard": ["Inter"]
-            },
-            "fontSize": {
-                    "label-mono": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                    "label-ui": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "body-intro": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-subsection": ["18px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                    "headline-section": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                    "display-hero-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                    "body-standard": ["16px", {"lineHeight": "1.625", "fontWeight": "400"}]
-            }
-          },
-        },
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lokesh Kumar, PhD</title>
+  <meta name="description" content="Contact Dr. Lokesh Kumar at NIT Calicut for research collaboration, academic inquiries, and industry partnerships.">
+  <meta name="author" content="Lokesh Kumar">
+  <meta name="theme-color" content="#131315">
+  <meta property="og:title" content="Contact | Lokesh Kumar, PhD">
+  <meta property="og:description" content="Open for collaborations in semiconductor physics and experimental research.">
+  <meta property="og:image" content="assets/lab.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("color-theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(228, 228, 231, 0.5);
-        }
-        .dark .glass-card {
-            background: rgba(24, 24, 27, 0.6);
-            border: 1px solid rgba(60, 74, 66, 0.5);
-        }
-        .hover-glow:hover {
-            border-color: #5af0b3;
-            box-shadow: 0 0 15px rgba(90, 240, 179, 0.1);
-        }
-    </style>
+    })();
+  </script>
 </head>
-<body class="bg-slate-50 dark:bg-background text-slate-900 dark:text-on-surface font-body-standard selection:bg-primary selection:text-on-primary transition-colors duration-300">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-surface/90 backdrop-blur-md border-b border-slate-200 dark:border-outline-variant shadow-sm h-16 transition-colors duration-300">
-<div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<button aria-label="Toggle Theme" class="p-2 rounded-lg bg-slate-100 dark:bg-surface-container-high text-slate-600 dark:text-on-surface hover:bg-slate-200 dark:hover:bg-surface-variant transition-colors" id="theme-toggle">
-<span class="material-symbols-outlined dark:hidden block">dark_mode</span>
-<span class="material-symbols-outlined hidden dark:block">light_mode</span>
-</button>
-<span class="font-headline-section text-headline-section font-bold text-primary truncate max-w-[200px] sm:max-w-none">Lokesh Kumar, PhD</span>
-</div>
-<div class="hidden md:flex items-center gap-8 font-label-ui text-label-ui">
-<a class="text-slate-600 dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform" href="index.html">Home</a>
-<a class="text-slate-600 dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform" href="research.html">Research</a>
-<a class="text-slate-600 dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform" href="publications.html">Publications</a>
-<a class="text-primary border-b-2 border-primary pb-1 cursor-pointer active:scale-95 transition-transform" href="contact.html">Contact</a>
-</div>
-<div class="flex items-center gap-2">
-<a class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-ui hover:bg-secondary transition-all active:scale-95 inline-block text-center whitespace-nowrap text-sm sm:text-base" href="#">CV <span class="hidden sm:inline">Download</span></a>
-</div>
-</div>
-</nav>
-<main class="pt-32 pb-section-v-space px-gutter max-w-container-max mx-auto">
-<!-- Hero Section -->
-<section class="mb-16">
-<h1 class="font-display-hero-mobile sm:font-display-hero text-display-hero-mobile sm:text-display-hero text-slate-900 dark:text-text-primary mb-4 transition-colors">Let's Connect</h1>
-<p class="font-body-intro text-body-intro text-slate-600 dark:text-text-muted max-w-2xl transition-colors">
-                Open for collaborations in semiconductor physics, experimental lab setups, and academic research inquiries.
-            </p>
-</section>
-<!-- Bento Grid Layout for Contact Methods & Affiliation -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-card-gap">
-<!-- Contact Method Cards -->
-<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-card-gap">
-<!-- Email -->
-<a class="glass-card p-6 rounded-xl hover-glow transition-all group flex flex-col justify-between h-48" href="mailto:lokesh@nitc.ac.in">
-<div>
-<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary">mail</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-slate-900 dark:text-text-primary transition-colors">Email</h3>
-</div>
-<p class="font-label-mono text-label-mono text-primary truncate">lokesh@nitc.ac.in</p>
-</a>
-<!-- LinkedIn -->
-<a class="glass-card p-6 rounded-xl hover-glow transition-all group flex flex-col justify-between h-48" href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079">
-<div>
-<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary">share</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-slate-900 dark:text-text-primary transition-colors">LinkedIn</h3>
-</div>
-<p class="font-label-mono text-label-mono text-primary">Connect Professionaly</p>
-</a>
-<!-- Phone/Office -->
-<div class="glass-card p-6 rounded-xl hover-glow transition-all group flex flex-col justify-between h-48">
-<div>
-<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary">call</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-slate-900 dark:text-text-primary transition-colors">Office Phone</h3>
-</div>
-<p class="font-label-mono text-label-mono text-primary">office_numberX</p>
-</div>
-<!-- Google Scholar -->
-<a class="glass-card p-6 rounded-xl hover-glow transition-all group flex flex-col justify-between h-48" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=B5zMjo4AAAAJ">
-<div>
-<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary">school</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-slate-900 dark:text-text-primary transition-colors">Scholar</h3>
-</div>
-<p class="font-label-mono text-label-mono text-primary">View Publications</p>
-</a>
-</div>
-<!-- Current Affiliation Block -->
-<div class="lg:col-span-5">
-<div class="glass-card rounded-xl overflow-hidden h-full flex flex-col">
-<div class="h-48 relative">
-<div class="absolute inset-0 bg-zinc-900/40 z-10"></div>
-<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, wide-angle exterior shot of a modern Indian Institute of Technology campus at dusk. The architecture features clean lines, concrete textures, and large glass panels reflecting a deep indigo sky. Subtle emerald green accent lighting highlights the lab building's entrance. The atmosphere is academic, prestigious, and calm, consistent with a high-end research facility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOpZdefS5XkaJx-B-W3FRtW3qf2-3xmi3SR3-DgblEH4NzGvP-fXUsfFCoqn-ZigO1SD2DfQ9ulg6mqw5MoCkDyBbvNLrC4IdetU9r3ouJE3b5UIqRXjPp6k2YMrNtLnvXztpjh2cMORAw0qghWE3uk5m1ZRXfDqZLk3UyQqrN1bq9gnebyWnjbCeYf3nKJRXDjNWNGNS5rQRHOJzK2PTeOgK1W20KIkonBGNZdkuAuXnKkwdV_vce')"></div>
-<div class="absolute bottom-4 left-6 z-20">
-<span class="bg-primary text-on-primary px-3 py-1 rounded-full text-label-mono font-label-mono text-xs shadow-sm">Primary Institution</span>
-</div>
-</div>
-<div class="p-6 sm:p-8 flex-grow">
-<h2 class="font-headline-section text-headline-section text-slate-900 dark:text-text-primary mb-4 transition-colors">Current Affiliation</h2>
-<div class="space-y-4">
-<div>
-<h4 class="text-slate-500 dark:text-text-muted font-label-ui uppercase tracking-wider text-[10px] mb-1 transition-colors">Department</h4>
-<p class="text-slate-800 dark:text-text-primary font-medium transition-colors">Department of Physics</p>
-</div>
-<div>
-<h4 class="text-slate-500 dark:text-text-muted font-label-ui uppercase tracking-wider text-[10px] mb-1 transition-colors">Laboratory</h4>
-<p class="text-slate-800 dark:text-text-primary font-medium transition-colors">Advanced Materials and Devices Laboratory</p>
-</div>
-<div>
-<h4 class="text-slate-500 dark:text-text-muted font-label-ui uppercase tracking-wider text-[10px] mb-1 transition-colors">Location</h4>
-<address class="not-italic text-slate-600 dark:text-text-muted font-body-standard transition-colors">
-                                    National Institute of Technology (NIT) Calicut<br/>
-                                    Kerala 673601, India
-                                </address>
-</div>
-</div>
-<div class="mt-8 pt-6 border-t border-slate-200 dark:border-outline-variant transition-colors">
-<div class="flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined text-[20px]">location_on</span>
-<span class="font-label-mono text-label-mono">NIT Calicut, Kerala</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Contact Form / Message Section -->
-<section class="mt-24 max-w-3xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="font-headline-section text-headline-section text-slate-900 dark:text-text-primary transition-colors">Send a Direct Inquiry</h2>
-<p class="text-slate-600 dark:text-text-muted mt-2 transition-colors">I typically respond to academic and industry inquiries within 24-48 hours.</p>
-</div>
-<form class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="block font-label-ui text-label-ui text-slate-800 dark:text-text-primary transition-colors">Full Name</label>
-<input class="w-full bg-white dark:bg-surface-container-lowest border border-slate-300 dark:border-outline-variant rounded-lg p-3 text-slate-900 dark:text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Dr. Jane Doe" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="block font-label-ui text-label-ui text-slate-800 dark:text-text-primary transition-colors">Email Address</label>
-<input class="w-full bg-white dark:bg-surface-container-lowest border border-slate-300 dark:border-outline-variant rounded-lg p-3 text-slate-900 dark:text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="jane.doe@university.edu" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="block font-label-ui text-label-ui text-slate-800 dark:text-text-primary transition-colors">Subject</label>
-<input class="w-full bg-white dark:bg-surface-container-lowest border border-slate-300 dark:border-outline-variant rounded-lg p-3 text-slate-900 dark:text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Collaboration Inquiry: Semiconductor Research" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="block font-label-ui text-label-ui text-slate-800 dark:text-text-primary transition-colors">Message</label>
-<textarea class="w-full bg-white dark:bg-surface-container-lowest border border-slate-300 dark:border-outline-variant rounded-lg p-3 text-slate-900 dark:text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Describe your inquiry or project details..." rows="5"></textarea>
-</div>
-<button class="w-full bg-primary text-on-primary font-label-ui py-4 rounded-lg hover:bg-secondary transition-colors font-semibold active:scale-[0.98] transition-transform" type="submit">
-                    Send Message
-                </button>
-</form>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-section-v-space border-t border-slate-200 dark:border-outline-variant bg-slate-100 dark:bg-surface-container-lowest transition-colors duration-300">
-<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-6 md:gap-4">
-<span class="font-label-mono text-label-mono text-primary text-center md:text-left">Lokesh Kumar • Physicist</span>
-<p class="font-body-standard text-body-standard text-slate-600 dark:text-text-muted text-center transition-colors">
-                © 2024 Lokesh Kumar • Experimental Semiconductor Physics
-            </p>
-<div class="flex flex-wrap justify-center gap-6">
-<a class="text-slate-600 dark:text-text-muted hover:text-secondary dark:hover:text-secondary transition-colors transition-opacity hover:opacity-80" href="mailto:lokesh@nitc.ac.in">Email</a>
-<a class="text-slate-600 dark:text-text-muted hover:text-secondary dark:hover:text-secondary transition-colors transition-opacity hover:opacity-80" href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079">LinkedIn</a>
-<a class="text-slate-600 dark:text-text-muted hover:text-secondary dark:hover:text-secondary transition-colors transition-opacity hover:opacity-80" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=B5zMjo4AAAAJ">Scholar</a>
-<a class="text-slate-600 dark:text-text-muted hover:text-secondary dark:hover:text-secondary transition-colors transition-opacity hover:opacity-80" href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5">Affiliation</a>
-</div>
-</div>
-</footer>
-<script>
-        // Simple scroll effect for nav
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 20) {
-                nav.classList.add('shadow-md');
-                nav.classList.remove('shadow-sm');
-            } else {
-                nav.classList.remove('shadow-md');
-                nav.classList.add('shadow-sm');
-            }
-        });
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        // Theme Toggle Logic
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Lokesh Kumar, PhD</a>
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme">
+          <span class="material-symbols-outlined icon-dark" aria-hidden="true">dark_mode</span>
+          <span class="material-symbols-outlined icon-light" aria-hidden="true">light_mode</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+        <button type="button" class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        themeToggle.addEventListener('click', () => {
-            htmlElement.classList.toggle('dark');
-        });
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a class="btn btn-primary" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+  </div>
 
-        // Form interaction micro-animation
-        const form = document.querySelector('form');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Sending...';
-            btn.classList.add('opacity-80');
-            
-            setTimeout(() => {
-                btn.innerText = 'Message Sent';
-                btn.classList.remove('bg-primary');
-                btn.classList.add('bg-secondary');
-                form.reset();
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.classList.remove('bg-secondary', 'opacity-80');
-                    btn.classList.add('bg-primary');
-                }, 3000);
-            }, 1500);
-        });
-    </script>
-</body></html>
+  <main id="main" class="container" style="padding-bottom:5rem">
+    <header class="page-hero">
+      <h1 class="display font-display">Let's Connect</h1>
+      <p class="lead">Open for collaborations in semiconductor physics, experimental lab setups, and academic research inquiries.</p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-methods">
+        <a class="contact-tile" href="mailto:lokesh@nitc.ac.in">
+          <div>
+            <div class="icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <h3 class="card-title">Email</h3>
+          </div>
+          <p class="value">lokesh@nitc.ac.in</p>
+        </a>
+
+        <a class="contact-tile" href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">share</span>
+            </div>
+            <h3 class="card-title">LinkedIn</h3>
+          </div>
+          <p class="value">Connect professionally</p>
+        </a>
+
+        <a class="contact-tile" href="https://orcid.org/0000-0001-7667-8422" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">badge</span>
+            </div>
+            <h3 class="card-title">ORCID</h3>
+          </div>
+          <p class="value">0000-0001-7667-8422</p>
+        </a>
+
+        <a class="contact-tile" href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <h3 class="card-title">Scholar</h3>
+          </div>
+          <p class="value">View publications</p>
+        </a>
+      </div>
+
+      <div class="affiliation-card">
+        <div class="affiliation-media">
+          <img src="assets/lab.jpg" srcset="assets/lab-sm.jpg 800w, assets/lab.jpg 1400w" sizes="(max-width:1024px) 100vw, 420px" width="1400" height="781" alt="NIT Calicut research environment" loading="lazy">
+          <span class="affiliation-badge">Primary Institution</span>
+        </div>
+        <div class="affiliation-body">
+          <h2 class="section-title font-headline">Current Affiliation</h2>
+          <dl>
+            <dt>Department</dt>
+            <dd>Department of Physics</dd>
+            <dt>Laboratory</dt>
+            <dd>Advanced Materials and Devices Laboratory</dd>
+            <dt>Location</dt>
+            <dd>
+              <address>
+                National Institute of Technology (NIT) Calicut<br>
+                Kerala 673601, India
+              </address>
+            </dd>
+          </dl>
+          <p class="text-primary font-mono" style="margin-top:1.5rem;display:flex;align-items:center;gap:0.5rem">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            NIT Calicut, Kerala
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="form-wrap">
+      <div class="intro">
+        <h2 class="section-title font-headline">Send a Direct Inquiry</h2>
+        <p class="muted">This form opens your email client with a pre-filled message to lokesh@nitc.ac.in. Typical response time: 24–48 hours for academic and industry inquiries.</p>
+      </div>
+      <form class="form" data-contact-form novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Dr. Jane Doe" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="jane.doe@university.edu" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Collaboration Inquiry: Semiconductor Research" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe your inquiry or project details..." required></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Open Email Draft</button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        <p class="form-note">Prefer a direct link? <a class="text-primary" href="mailto:lokesh@nitc.ac.in">lokesh@nitc.ac.in</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">Lokesh Kumar · Physicist</span>
+        <p class="footer-copy">© 2026 Lokesh Kumar · Experimental Semiconductor Physics</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:lokesh@nitc.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://orcid.org/0000-0001-7667-8422" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5" target="_blank" rel="noopener noreferrer">Affiliation</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

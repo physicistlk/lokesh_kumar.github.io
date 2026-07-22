@@ -1,552 +1,245 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications &amp; Patents | Lokesh Kumar, PhD</title>
+  <meta name="description" content="Selected publications and patents by Dr. Lokesh Kumar on OECTs, graphene transistors, biosensors, and neuromorphic devices.">
+  <meta name="author" content="Lokesh Kumar">
+  <meta name="theme-color" content="#131315">
+  <meta property="og:title" content="Publications & Patents | Lokesh Kumar, PhD">
+  <meta property="og:description" content="Selected scholarly output and patents in semiconductor physics and bioelectronics.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("color-theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<html class="dark" lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#5af0b3",
-                        "error": "#ffb4ab",
-                        "secondary": "#4edea3",
-                        "background": "#131315",
-                        "on-error": "#690005",
-                        "tertiary-fixed-dim": "#ffb787",
-                        "text-dim": "#52525b",
-                        "secondary-fixed": "#6ffbbe",
-                        "inverse-on-surface": "#313032",
-                        "on-background": "#e5e1e4",
-                        "primary-fixed": "#68fcbf",
-                        "surface-container-highest": "#353437",
-                        "text-primary": "#ffffff",
-                        "on-secondary-fixed": "#002113",
-                        "error-container": "#93000a",
-                        "on-surface": "#e5e1e4",
-                        "on-tertiary-fixed": "#311300",
-                        "on-surface-variant": "#bbcac0",
-                        "surface-tint": "#45dfa4",
-                        "outline": "#85948b",
-                        "tertiary-fixed": "#ffdcc7",
-                        "on-secondary": "#003824",
-                        "primary-fixed-dim": "#45dfa4",
-                        "surface-container-high": "#2a2a2c",
-                        "tertiary": "#ffccad",
-                        "text-muted": "#a1a1aa",
-                        "inverse-primary": "#006c4b",
-                        "tertiary-container": "#ffa668",
-                        "surface-card": "#18181b",
-                        "secondary-fixed-dim": "#4edea3",
-                        "surface-container-lowest": "#0e0e10",
-                        "on-error-container": "#ffdad6",
-                        "outline-variant": "#3c4a42",
-                        "on-primary": "#003825",
-                        "surface-bright": "#39393b",
-                        "secondary-container": "#00a572",
-                        "inverse-surface": "#e5e1e4",
-                        "surface-dim": "#131315",
-                        "on-secondary-fixed-variant": "#005236",
-                        "on-primary-container": "#00563b",
-                        "on-tertiary-container": "#783901",
-                        "on-tertiary-fixed-variant": "#723600",
-                        "surface-variant": "#353437",
-                        "surface-container-low": "#1c1b1d",
-                        "on-primary-fixed": "#002114",
-                        "border-muted": "#27272a",
-                        "on-primary-fixed-variant": "#005137",
-                        "primary-container": "#34d399",
-                        "surface": "#131315",
-                        "surface-container": "#201f22",
-                        "on-secondary-container": "#00311f",
-                        "on-tertiary": "#502400",
-                        "text-secondary": "#e4e4e7"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1024px",
-                        "gutter": "1.5rem",
-                        "card-gap": "1.5rem",
-                        "element-standard": "1rem",
-                        "element-tight": "0.5rem",
-                        "section-v-space": "5rem"
-                    },
-                    "fontFamily": {
-                        "label-mono": ["JetBrains Mono"],
-                        "display-hero": ["Hanken Grotesk"],
-                        "label-ui": ["Inter"],
-                        "body-intro": ["Inter"],
-                        "headline-subsection": ["Hanken Grotesk"],
-                        "headline-section": ["Hanken Grotesk"],
-                        "display-hero-mobile": ["Hanken Grotesk"],
-                        "body-standard": ["Inter"]
-                    },
-                    "fontSize": {
-                        "label-mono": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                        "label-ui": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "body-intro": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-subsection": ["18px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                        "headline-section": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                        "display-hero-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                        "body-standard": ["16px", {"lineHeight": "1.625", "fontWeight": "400"}]
-                    }
-                }
-            }
-        }
-    }catch(_e){}</script>
-<style>
-        .loader-spin {
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-    </style>
-</head><body class="bg-inverse-surface text-surface dark:bg-background dark:text-on-surface selection:bg-inverse-primary/30 dark:selection:bg-primary/30 transition-colors duration-300">
-<!-- Navigation Shell -->
-<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-surface/90 backdrop-blur-md border-b border-gray-200 dark:border-outline-variant shadow-sm h-16 transition-colors duration-300">
-<div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<button class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-surface-container-high focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 transition-colors" id="theme-toggle" type="button">
-<span class="hidden material-symbols-outlined" data-original-icon="dark_mode" id="theme-toggle-dark-icon">dark_mode</span>
-<span class="hidden material-symbols-outlined" data-original-icon="light_mode" id="theme-toggle-light-icon">light_mode</span>
-</button>
-<a class="font-headline-section text-headline-section font-bold text-emerald-600 dark:text-primary" href="index.html">
-                    Lokesh Kumar, PhD
-                </a>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="research.html">Research</a>
-<a class="font-label-ui text-label-ui text-emerald-600 dark:text-primary border-b-2 border-emerald-600 dark:border-primary pb-1" href="publications.html">Publications</a>
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
-<a class="cursor-pointer active:scale-95 transition-transform bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-4 py-2 rounded-lg font-label-ui inline-block" href="#">Download CV</a>
-</div>
-<div class="md:hidden"><button class="p-2 text-emerald-600 dark:text-primary focus:outline-none" id="mobile-menu-btn"><span class="material-symbols-outlined text-3xl">menu</span></button></div>
-</div>
-</nav>
-<div class="hidden md:hidden fixed inset-0 z-[60] bg-white dark:bg-background p-gutter flex flex-col gap-8 pt-24" id="mobile-menu"><button class="absolute top-4 right-4 p-2 text-gray-500 dark:text-on-surface-variant" id="mobile-menu-close"><span class="material-symbols-outlined text-3xl">close</span></button><nav class="flex flex-col gap-6"><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="index.html">Home</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="research.html">Research</a><a class="font-label-ui text-2xl text-emerald-600 dark:text-primary" href="publications.html">Publications</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="contact.html">Contact</a></nav><a class="bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-6 py-4 rounded-lg font-label-ui text-center text-xl" href="#">Download CV</a></div><main class="pt-32 pb-section-v-space px-gutter max-w-container-max mx-auto">
-<!-- Header Section -->
-<section class="mb-16 transition-all duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div>
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary tracking-wider uppercase">Scholarly Output</span>
-<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero mt-2 text-surface dark:text-white">Publications &amp; <span class="text-inverse-primary dark:text-primary">Patents</span></h1>
-<div class="mt-4 flex flex-wrap gap-3">
-<a class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-outline-variant hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-colors" href="https://orcid.org/0000-0001-7667-8422" target="_blank">
-<img alt="ORCID" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxyaEmODh68NMFT68UMEMaLtHePmKq4Anddiek97dPF-IERSdMyiGH5ysaVnxR6mKEeI0XezirSfd1dUDk9OLhEMLb5tlkla4Op9wSPRS0QkuZHJaJ6ex1Cx66swfSTU9C3YqCG2UNc8C6bbM8GdfIU6aohaBjgj6XgTdjQLX1Mquw2-mtyGz8zR3Cgdyp5kk78tivtdwcZ96TMkwhu75MtmQbYG4CdnlesQIrR83FhjOleadE5g-l"/>
-<span class="font-label-mono text-[12px] text-surface/70 dark:text-text-muted">0000-0001-7667-8422</span>
-</a>
-<a class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-outline-variant hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-colors" href="https://www.webofscience.com/wos/author/record/IQX-0340-2023" target="_blank">
-<span class="material-symbols-outlined text-sm text-surface/70 dark:text-text-muted">badge</span>
-<span class="font-label-mono text-[12px] text-surface/70 dark:text-text-muted">ResearcherID: IQX-0340-2023</span>
-</a>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="flex flex-col items-end">
-<span class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted">Total Citations</span>
-<span class="font-headline-section text-headline-section text-inverse-primary dark:text-primary" id="citation-count">72</span>
-</div>
-<div class="w-px h-10 bg-outline-variant self-center"></div>
-<div class="flex flex-col items-end">
-<span class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted">H-Index</span>
-<span class="font-headline-section text-headline-section text-inverse-primary dark:text-primary" id="h-index">2</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Selected Publications Section -->
-<section class="mb-24 transition-all duration-700 opacity-100 translate-y-0">
-<div class="flex items-center gap-4 mb-8">
-<h2 class="font-headline-section text-headline-section text-surface dark:text-white">Selected Publications</h2>
-<div class="flex-grow h-px bg-outline-variant"></div>
-</div>
-<div class="space-y-1">
-<!-- Publication 1 -->
-<article class="publication-row p-4 md:p-6 rounded-xl border border-transparent transition-all hover:border-outline-variant/30 group duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col md:flex-row gap-4 md:gap-6">
-<div class="flex-grow">
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2 group-hover:text-inverse-primary dark:group-hover:text-primary transition-colors">
-                                Bio-Realistic Emulation of Complex Synaptic Plasticity and Logic via a Fully Screen-Printed Flexible Neuromorphic Transistor
-                            </h3>
-<p class="font-body-standard text-body-standard text-surface/70 dark:text-text-muted mb-3">
-<span class="text-surface font-medium dark:text-on-surface">L. Kumar</span>, S. Kurup, B. B. Bhatt, and D. Gupta
-                            </p>
-<div class="flex flex-wrap items-center gap-2 md:gap-4">
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary px-2 py-1 bg-inverse-primary/10 dark:bg-primary/10 rounded">Applied Materials Today</span>
-<span class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted">Accepted April 2026</span>
-<span class="font-label-mono text-[12px] text-[#ff5c00] border border-[#ff5c00]/30 px-2 py-1 rounded">Altmetric 12</span>
-<span class="font-label-mono text-[12px] text-[#1361c4] dark:text-[#5293eb] border border-[#1361c4]/30 dark:border-[#5293eb]/30 px-2 py-1 rounded">Dimensions 5</span>
-</div>
-</div>
-<div class="flex flex-row md:flex-col items-start gap-3 mt-4 md:mt-0">
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="DOI Link">link</button>
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="Download PDF">picture_as_pdf</button>
-</div>
-</div>
-</article>
-<!-- Publication 2 -->
-<article class="publication-row p-4 md:p-6 rounded-xl border border-transparent transition-all hover:border-outline-variant/30 group duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col md:flex-row gap-4 md:gap-6">
-<div class="flex-grow">
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2 group-hover:text-inverse-primary dark:group-hover:text-primary transition-colors">
-                                Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device Based on Ion Gel Dielectric
-                            </h3>
-<p class="font-body-standard text-body-standard text-surface/70 dark:text-text-muted mb-3">
-<span class="text-surface font-medium dark:text-on-surface">L. Kumar</span>, B. B. Bhatt, D. Gupta
-                            </p>
-<div class="flex flex-wrap items-center gap-2 md:gap-4">
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary px-2 py-1 bg-inverse-primary/10 dark:bg-primary/10 rounded">Carbon</span>
-<span class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted">247, 120946, 2025</span>
-<span class="font-label-mono text-label-mono text-secondary-container dark:text-secondary-fixed">IF: 11.6</span>
-<span class="font-label-mono text-[12px] text-[#ff5c00] border border-[#ff5c00]/30 px-2 py-1 rounded">Altmetric 8</span>
-<span class="font-label-mono text-[12px] text-[#1361c4] dark:text-[#5293eb] border border-[#1361c4]/30 dark:border-[#5293eb]/30 px-2 py-1 rounded">Dimensions 14</span>
-</div>
-</div>
-<div class="flex flex-row md:flex-col items-start gap-3 mt-4 md:mt-0">
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="DOI Link">link</button>
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="Download PDF">picture_as_pdf</button>
-</div>
-</div>
-</article>
-<!-- Publication 3 -->
-<article class="publication-row p-4 md:p-6 rounded-xl border border-transparent transition-all hover:border-outline-variant/30 group duration-700 opacity-100 translate-y-0">
-<div class="flex flex-col md:flex-row gap-4 md:gap-6">
-<div class="flex-grow">
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2 group-hover:text-inverse-primary dark:group-hover:text-primary transition-colors">
-                                Ultrasensitive Detection of Aromatic Water Pollutants Through Protein Immobilization Driven OECTs
-                            </h3>
-<p class="font-body-standard text-body-standard text-surface/70 dark:text-text-muted mb-3">
-<span class="text-surface font-medium dark:text-on-surface">L. Kumar</span>, S. Sahu, S. Das, D. Gupta, R. Ananda
-                            </p>
-<div class="flex flex-wrap items-center gap-2 md:gap-4">
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary px-2 py-1 bg-inverse-primary/10 dark:bg-primary/10 rounded">Chemical Science</span>
-<span class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted">15, 710–719, 2024</span>
-<span class="font-label-mono text-label-mono text-secondary-container dark:text-secondary-fixed">IF: 9.8</span>
-<span class="font-label-mono text-[12px] text-[#ff5c00] border border-[#ff5c00]/30 px-2 py-1 rounded">Altmetric 24</span>
-<span class="font-label-mono text-[12px] text-[#1361c4] dark:text-[#5293eb] border border-[#1361c4]/30 dark:border-[#5293eb]/30 px-2 py-1 rounded">Dimensions 32</span>
-</div>
-</div>
-<div class="flex flex-row md:flex-col items-start gap-3 mt-4 md:mt-0">
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="DOI Link">link</button>
-<button class="material-symbols-outlined text-outline hover:text-inverse-primary dark:hover:text-primary transition-colors" title="Download PDF">picture_as_pdf</button>
-</div>
-</div>
-</article>
-</div>
-<div class="mt-12 flex justify-center">
-<button class="font-label-ui text-label-ui text-surface/80 dark:text-text-secondary border border-outline-variant px-8 py-3 rounded-full hover:bg-surface-container-high/20 dark:hover:bg-surface-container-high transition-colors flex items-center gap-3" id="view-complete-list-btn">
-<span id="btn-text">View Complete List</span>
-<span class="material-symbols-outlined text-sm" id="btn-icon">arrow_forward</span>
-</button>
-</div>
-</section>
-<!-- Patents Section -->
-<section class="transition-all duration-700 opacity-100 translate-y-0">
-<div class="flex items-center gap-4 mb-8">
-<h2 class="font-headline-section text-headline-section text-surface dark:text-white">Patents</h2>
-<div class="flex-grow h-px bg-outline-variant"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-card-gap">
-<!-- Patent 1 -->
-<div class="glass-card p-6 md:p-8 rounded-xl flex flex-col justify-between hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-all group duration-700 opacity-100 translate-y-0">
-<div>
-<div class="flex justify-between items-start mb-6">
-<div class="p-3 bg-inverse-primary/10 dark:bg-primary/10 rounded-lg">
-<span class="material-symbols-outlined text-inverse-primary dark:text-primary">verified</span>
-</div>
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary bg-inverse-primary/10 dark:bg-primary/10 px-3 py-1 rounded-full border border-inverse-primary/20 dark:border-primary/20">GRANTED</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2">Protein Immobilized OECT Biosensor for Phenolic Pollutants</h3>
-<p class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted mb-4">Indian Patent No: 474656</p>
-</div>
-<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
-<span class="text-surface/60 dark:text-text-muted font-label-ui text-label-ui">Status: GRANTED</span>
-<a class="text-inverse-primary dark:text-primary font-label-ui text-label-ui hover:underline" href="#">View Source</a>
-</div>
-</div>
-<!-- Patent 2 -->
-<div class="glass-card p-6 md:p-8 rounded-xl flex flex-col justify-between hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-all group duration-700 opacity-100 translate-y-0">
-<div>
-<div class="flex justify-between items-start mb-6">
-<div class="p-3 bg-inverse-primary/10 dark:bg-primary/10 rounded-lg">
-<span class="material-symbols-outlined text-inverse-primary dark:text-primary">verified</span>
-</div>
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary bg-inverse-primary/10 dark:bg-primary/10 px-3 py-1 rounded-full border border-inverse-primary/20 dark:border-primary/20">GRANTED</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2">OECT Based Biosensor for the Detection of DNA Binding Proteins</h3>
-<p class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted mb-4">Indian Patent No: 431170</p>
-</div>
-<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
-<span class="text-surface/60 dark:text-text-muted font-label-ui text-label-ui">Status: GRANTED</span>
-<a class="text-inverse-primary dark:text-primary font-label-ui text-label-ui hover:underline" href="#">View Source</a>
-</div>
-</div>
-<!-- Patent 3 -->
-<div class="glass-card p-6 md:p-8 rounded-xl flex flex-col justify-between hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-all group duration-700 opacity-100 translate-y-0">
-<div>
-<div class="flex justify-between items-start mb-6">
-<div class="p-3 bg-inverse-primary/10 dark:bg-primary/10 rounded-lg">
-<span class="material-symbols-outlined text-inverse-primary dark:text-primary">verified</span>
-</div>
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary bg-inverse-primary/10 dark:bg-primary/10 px-3 py-1 rounded-full border border-inverse-primary/20 dark:border-primary/20">GRANTED</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2">Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device...</h3>
-<p class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted mb-4">App No: 202521063172</p>
-</div>
-<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
-<span class="text-surface/60 dark:text-text-muted font-label-ui text-label-ui">Granted 10/04/2026</span>
-<a class="text-inverse-primary dark:text-primary font-label-ui text-label-ui hover:underline" href="#">View Source</a>
-</div>
-</div>
-<!-- Patent 4 -->
-<div class="glass-card p-6 md:p-8 rounded-xl flex flex-col justify-between hover:border-inverse-primary/50 dark:hover:border-primary/50 transition-all group duration-700 opacity-100 translate-y-0">
-<div>
-<div class="flex justify-between items-start mb-6">
-<div class="p-3 bg-secondary-container/10 rounded-lg">
-<span class="material-symbols-outlined text-secondary-container dark:text-secondary">pending</span>
-</div>
-<span class="font-label-mono text-label-mono text-secondary-container dark:text-secondary-fixed bg-secondary-container/10 px-3 py-1 rounded-full border border-secondary-container/20 dark:border-secondary/20">PUBLISHED</span>
-</div>
-<h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-2">Graphite-to-Graphene Transformation via Microwave Assisted Green Synthesis...</h3>
-<p class="font-label-mono text-label-mono text-surface/60 dark:text-text-muted mb-4">App No: 202521054957</p>
-</div>
-<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-center">
-<span class="text-surface/60 dark:text-text-muted font-label-ui text-label-ui">Published JUN 2025</span>
-<a class="text-inverse-primary dark:text-primary font-label-ui text-label-ui hover:underline" href="#">View Details</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-section-v-space border-t border-outline-variant bg-inverse-surface dark:bg-surface-container-lowest transition-colors duration-300">
-<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-4">
-<span class="font-label-mono text-label-mono text-inverse-primary dark:text-primary text-center md:text-left">© 2024 Lokesh Kumar • Experimental Semiconductor Physics</span>
-<div class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8">
-<a class="font-body-standard text-body-standard text-surface/60 dark:text-text-muted hover:text-secondary-container dark:hover:text-secondary transition-colors" href="mailto:lokesh@nitc.ac.in">Email</a>
-<a class="font-body-standard text-body-standard text-surface/60 dark:text-text-muted hover:text-secondary-container dark:hover:text-secondary transition-colors" href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079">LinkedIn</a>
-<a class="font-body-standard text-body-standard text-surface/60 dark:text-text-muted hover:text-secondary-container dark:hover:text-secondary transition-colors" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=B5zMjo4AAAAJ">Scholar</a>
-<a class="font-body-standard text-body-standard text-surface/60 dark:text-text-muted hover:text-secondary-container dark:hover:text-secondary transition-colors" href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5">Affiliation</a>
-</div>
-</div>
-</footer>
-<!-- Modal for Full Publication List -->
-<div class="fixed inset-0 z-[100] hidden bg-black/50 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="publications-modal">
-<div class="flex items-center justify-center min-h-screen p-4">
-<div class="bg-inverse-surface dark:bg-surface-container-low rounded-2xl shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col transform scale-95 transition-transform duration-300" id="modal-content">
-<div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
-<h2 class="font-headline-section text-headline-section text-surface dark:text-white flex items-center gap-2">
-<span class="material-symbols-outlined text-inverse-primary dark:text-primary">school</span>
-                        All Publications &amp; Patents
-                    </h2>
-<button class="text-surface/60 dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors" id="close-modal-btn">
-<span class="material-symbols-outlined text-2xl">close</span>
-</button>
-</div>
-<div class="p-6 overflow-y-auto custom-scrollbar flex-grow space-y-4" id="full-publications-list">
-<!-- Dynamically populated via JS -->
-</div>
-<div class="p-4 border-t border-outline-variant/30 text-center">
-<a class="font-label-ui text-label-ui text-inverse-primary dark:text-primary hover:underline" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=B5zMjo4AAAAJ" target="_blank">View on Google Scholar</a>
-</div>
-</div>
-</div>
-</div>
-<script>
-        // Data for full publications list (simulated from Document_5)
-        const allPublicationsData = [
-            {
-                title: "An ultra-compressible piezoresistive strain and pressure sensor based on RGO-CNT-Melamine foam composite for biomedical sensing",
-                authors: "BB Bhatt, L Kumar, A Kushwaha, D Gupta",
-                venue: "Sensors and Actuators A: Physical 331, 112875",
-                year: "2021",
-                citations: "61"
-            },
-            {
-                title: "Ultrasensitive detection of aromatic water pollutants through protein immobilization driven organic electrochemical transistors",
-                authors: "S Sahu, L Kumar, S Das, D Gupta, R Anand",
-                venue: "Chemical Science 15 (2), 710-719",
-                year: "2024",
-                citations: "10"
-            },
-            {
-                title: "Low voltage photo-thermally reduced graphene oxide transistor device based on ion gel dielectric",
-                authors: "L Kumar, BB Bhatt, D Gupta",
-                venue: "Carbon, 120946",
-                year: "2025",
-                citations: "1"
-            },
-            {
-                title: "AN ORGANIC ELECTROCHEMICAL TRANSISOTR (OECT) AND A METHOD OF FABRICATING THEREOF",
-                authors: "DG Lokesh Kumar, Bharat",
-                venue: "IN Patent App. 202,521,063,172",
-                year: "2025",
-                citations: "-"
-            },
-            {
-                title: "Graphite-to-Graphene Transformation via Microwave-Assisted Time Dependent Green Synthesis Treatment Using Natural Gum Arabic",
-                authors: "DG Lokesh Kumar, Devang Anadkat",
-                venue: "IN Patent App. 202,521,054,957",
-                year: "2025",
-                citations: "-"
-            },
-            {
-                title: "Screen-Printed Organic Electrochemical Transistor: A Protein Immobilization Approach to Detect Aromatic Water Pollutants",
-                authors: "L Kumar, S Sahu, S Das, D Gupta, R Anand",
-                venue: "4th International Electronic Conference on Biosensors, MDPI",
-                year: "2024",
-                citations: "-"
-            },
-            {
-                title: "ORGANIC ELECTROCHEMICAL TRANSISTOR BASED BIOSENSOR FOR THE DETECTION OF DNA BINDING PROTEINS AND METHOD FOR PREPARATION THEREOF",
-                authors: "D GUPTA, R ANAND, L KUMAR, S SAHU",
-                venue: "IN Patent 431,170",
-                year: "2023",
-                citations: "-"
-            },
-            {
-                title: "PROTEIN IMMOBILIZED ORGANIC ELECTROCHEMICAL BIOSENSOR FOR DETECTING PHENOLIC POLLUTANTS AND PROCESS FOR PRODU SAME",
-                authors: "R ANAND, D GUPTA, S SAHU, L KUMAR, S DAS",
-                venue: "IN Patent 474,656",
-                year: "2023",
-                citations: "-"
-            }
-        ];
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Lokesh Kumar, PhD</a>
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html" aria-current="page">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme">
+          <span class="material-symbols-outlined icon-dark" aria-hidden="true">dark_mode</span>
+          <span class="material-symbols-outlined icon-light" aria-hidden="true">light_mode</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+        <button type="button" class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        // Theme Toggle Logic
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const html = document.documentElement;
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html" aria-current="page">Publications</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+  </div>
 
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
+  <main id="main" class="container" style="padding-bottom:5rem">
+    <header class="page-hero page-hero-row">
+      <div>
+        <span class="eyebrow">Scholarly Output</span>
+        <h1 class="display font-display" style="margin-top:0.5rem">Publications &amp; <span class="accent">Patents</span></h1>
+      </div>
+      <div class="stats" title="Metrics from Google Scholar — verify periodically">
+        <div class="stat">
+          <span class="stat-label">Google Scholar</span>
+          <a class="stat-value" href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="text-decoration:none">Profile</a>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-label">ORCID</span>
+          <a class="stat-value" href="https://orcid.org/0000-0001-7667-8422" target="_blank" rel="noopener noreferrer" style="font-size:1rem;text-decoration:none">0000-0001-7667-8422</a>
+        </div>
+      </div>
+    </header>
 
-        themeToggleBtn.addEventListener('click', function() {
-            html.classList.toggle('dark');
-            if (html.classList.contains('dark')) {
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                localStorage.setItem('color-theme', 'light');
-            }
-        });
+    <section class="reveal" style="margin-bottom:5rem">
+      <div class="section-divider">
+        <h2 class="section-title font-headline" style="margin:0">Selected Publications</h2>
+      </div>
 
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+      <div class="pub-list">
+        <article class="pub-item">
+          <div style="flex:1">
+            <h3>Bio-Realistic Emulation of Complex Synaptic Plasticity and Logic via a Fully Screen-Printed Flexible Neuromorphic Transistor</h3>
+            <p class="authors"><strong>L. Kumar</strong>, S. Kurup, B. B. Bhatt, and D. Gupta</p>
+            <div class="pub-meta">
+              <span class="chip">Applied Materials Today</span>
+              <span class="font-mono muted">Accepted April 2026</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="View on Google Scholar">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </a>
+          </div>
+        </article>
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-        });
+        <article class="pub-item">
+          <div style="flex:1">
+            <h3>Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device Based on Ion Gel Dielectric</h3>
+            <p class="authors"><strong>L. Kumar</strong>, B. B. Bhatt, D. Gupta</p>
+            <div class="pub-meta">
+              <span class="chip">Carbon</span>
+              <span class="font-mono muted">247, 120946, 2025</span>
+              <span class="font-mono text-primary">IF: 11.6</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1016/j.carbon.2025.120946" target="_blank" rel="noopener noreferrer" title="DOI link" aria-label="Open DOI for Carbon paper">
+              <span class="material-symbols-outlined" aria-hidden="true">link</span>
+            </a>
+            <a href="https://doi.org/10.1016/j.carbon.2025.120946" target="_blank" rel="noopener noreferrer" title="Publisher page / PDF" aria-label="Open publisher page">
+              <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
+            </a>
+          </div>
+        </article>
 
-        document.querySelectorAll('.publication-row').forEach(row => {
-            row.addEventListener('mouseenter', () => {
-                const icons = row.querySelectorAll('.material-symbols-outlined');
-                icons.forEach(icon => icon.style.transform = 'translateY(-2px)');
-            });
-            row.addEventListener('mouseleave', () => {
-                const icons = row.querySelectorAll('.material-symbols-outlined');
-                icons.forEach(icon => icon.style.transform = 'translateY(0)');
-            });
-        });
+        <article class="pub-item">
+          <div style="flex:1">
+            <h3>Ultrasensitive Detection of Aromatic Water Pollutants Through Protein Immobilization Driven OECTs</h3>
+            <p class="authors">S. Sahu, <strong>L. Kumar</strong>, S. Das, D. Gupta, R. Ananda</p>
+            <div class="pub-meta">
+              <span class="chip">Chemical Science</span>
+              <span class="font-mono muted">15, 710–719, 2024</span>
+              <span class="font-mono text-primary">IF: 9.8</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1039/d3sc03509c" target="_blank" rel="noopener noreferrer" title="DOI link" aria-label="Open DOI for Chemical Science paper">
+              <span class="material-symbols-outlined" aria-hidden="true">link</span>
+            </a>
+            <a href="https://doi.org/10.1039/d3sc03509c" target="_blank" rel="noopener noreferrer" title="Publisher page / PDF" aria-label="Open publisher page">
+              <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
+            </a>
+          </div>
+        </article>
+      </div>
 
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                }
-            });
-        }, observerOptions);
+      <div class="center-cta">
+        <a class="btn btn-outline" href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          View complete list on Google Scholar
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </section>
 
-        document.querySelectorAll('section, article, .glass-card').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
-            observer.observe(el);
-        });
+    <section class="reveal">
+      <div class="section-divider">
+        <h2 class="section-title font-headline" style="margin:0">Patents</h2>
+      </div>
 
-        fetch('https://api.openalex.org/authors/https://orcid.org/0000-0001-7667-8422')
-            .then(response => response.json())
-            .then(data => {
-                if(data && data.cited_by_count !== undefined) {
-                    document.getElementById('citation-count').textContent = data.cited_by_count;
-                }
-                if(data && data.summary_stats && data.summary_stats.h_index !== undefined) {
-                    document.getElementById('h-index').textContent = data.summary_stats.h_index;
-                }
-            })
-            .catch(error => console.error('Error fetching OpenAlex data:', error));
+      <div class="patent-grid">
+        <article class="card patent-card">
+          <div>
+            <div class="patent-top">
+              <div class="patent-icon" aria-hidden="true">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <span class="patent-status">GRANTED</span>
+            </div>
+            <h3 class="card-title">Protein Immobilized OECT Biosensor for Phenolic Pollutants</h3>
+            <p class="font-mono muted">Indian Patent No: 474656</p>
+          </div>
+          <div class="patent-foot">
+            <span class="muted" style="font-size:0.875rem">Status: Granted</span>
+            <a href="https://patents.google.com/?q=474656&oq=474656" target="_blank" rel="noopener noreferrer">Search Google Patents</a>
+          </div>
+        </article>
 
-        // View Complete List Logic
-        const viewCompleteListBtn = document.getElementById('view-complete-list-btn');
-        const btnText = document.getElementById('btn-text');
-        const btnIcon = document.getElementById('btn-icon');
-        const modal = document.getElementById('publications-modal');
-        const modalContent = document.getElementById('modal-content');
-        const closeModalBtn = document.getElementById('close-modal-btn');
-        const listContainer = document.getElementById('full-publications-list');
+        <article class="card patent-card">
+          <div>
+            <div class="patent-top">
+              <div class="patent-icon" aria-hidden="true">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <span class="patent-status">GRANTED</span>
+            </div>
+            <h3 class="card-title">OECT Based Biosensor for the Detection of DNA Binding Proteins</h3>
+            <p class="font-mono muted">Indian Patent No: 431170</p>
+          </div>
+          <div class="patent-foot">
+            <span class="muted" style="font-size:0.875rem">Status: Granted</span>
+            <a href="https://patents.google.com/?q=431170&oq=431170" target="_blank" rel="noopener noreferrer">Search Google Patents</a>
+          </div>
+        </article>
 
-        function createPublicationHTML(pub) {
-            return `
-                <div class="p-4 border border-outline-variant/20 rounded-xl hover:border-inverse-primary/40 dark:hover:border-primary/40 transition-colors bg-inverse-surface/50 dark:bg-surface/50">
-                    <h3 class="font-headline-subsection text-headline-subsection text-surface dark:text-text-primary mb-1">${pub.title}</h3>
-                    <p class="font-body-standard text-[14px] text-surface/70 dark:text-text-muted mb-2">${pub.authors}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <span class="font-label-mono text-[12px] text-inverse-primary dark:text-primary">${pub.venue}</span>
-                        <span class="font-label-mono text-[12px] px-2 py-0.5 bg-surface-container-high dark:bg-surface-container rounded">${pub.year}</span>
-                        ${pub.citations !== '-' ? `<span class="font-label-mono text-[12px] text-secondary-container dark:text-secondary-fixed">Citations: ${pub.citations}</span>` : ''}
-                    </div>
-                </div>
-            `;
-        }
+        <article class="card patent-card">
+          <div>
+            <div class="patent-top">
+              <div class="patent-icon" aria-hidden="true">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <span class="patent-status">GRANTED</span>
+            </div>
+            <h3 class="card-title">Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device</h3>
+            <p class="font-mono muted">App No: 202521063172</p>
+          </div>
+          <div class="patent-foot">
+            <span class="muted" style="font-size:0.875rem">Granted 10/04/2026</span>
+            <a href="https://patents.google.com/?q=202521063172" target="_blank" rel="noopener noreferrer">Search Google Patents</a>
+          </div>
+        </article>
 
-        viewCompleteListBtn.addEventListener('click', () => {
-            // Loading state
-            btnText.textContent = "Syncing with Scholar...";
-            btnIcon.textContent = "sync";
-            btnIcon.classList.add("loader-spin");
-            viewCompleteListBtn.disabled = true;
+        <article class="card patent-card">
+          <div>
+            <div class="patent-top">
+              <div class="patent-icon" aria-hidden="true" style="color:var(--secondary)">
+                <span class="material-symbols-outlined">pending</span>
+              </div>
+              <span class="patent-status published">PUBLISHED</span>
+            </div>
+            <h3 class="card-title">Graphite-to-Graphene Transformation via Microwave Assisted Green Synthesis</h3>
+            <p class="font-mono muted">App No: 202521054957</p>
+          </div>
+          <div class="patent-foot">
+            <span class="muted" style="font-size:0.875rem">Published Jun 2025</span>
+            <a href="https://patents.google.com/?q=202521054957" target="_blank" rel="noopener noreferrer">Search Google Patents</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-            setTimeout(() => {
-                // Populate list
-                listContainer.innerHTML = allPublicationsData.map(createPublicationHTML).join('');
-                
-                // Show modal
-                modal.classList.remove('hidden');
-                // Trigger reflow
-                void modal.offsetWidth;
-                modal.classList.add('opacity-100');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">© 2026 Lokesh Kumar</span>
+        <p class="footer-copy">Experimental Semiconductor Physics</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:lokesh@nitc.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://orcid.org/0000-0001-7667-8422" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5" target="_blank" rel="noopener noreferrer">Affiliation</a>
+      </nav>
+    </div>
+  </footer>
 
-                // Reset button
-                btnText.textContent = "View Complete List";
-                btnIcon.textContent = "arrow_forward";
-                btnIcon.classList.remove("loader-spin");
-                viewCompleteListBtn.disabled = false;
-            }, 1200); // Simulate network delay
-        });
-
-        function closeModal() {
-            modal.classList.remove('opacity-100');
-            modalContent.classList.remove('scale-100');
-            modalContent.classList.add('scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
-        }
-
-        closeModalBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-    </script>
-</body></html>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

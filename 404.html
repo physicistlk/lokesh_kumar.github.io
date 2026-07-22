@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Lokesh Kumar, PhD</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("color-theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main class="error-page">
+    <p class="code">404</p>
+    <h1 class="display font-display" style="font-size:2rem">Page not found</h1>
+    <p class="muted" style="margin:1rem 0 2rem;max-width:28rem">
+      The page you requested is not part of this academic site. Return home or browse research and publications.
+    </p>
+    <div class="hero-actions" style="justify-content:center">
+      <a class="btn btn-primary" href="index.html">Home</a>
+      <a class="btn btn-outline" href="research.html">Research</a>
+      <a class="btn btn-outline" href="publications.html">Publications</a>
+    </div>
+  </main>
+</body>
+</html>

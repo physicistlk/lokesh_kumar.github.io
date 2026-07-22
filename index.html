@@ -1,342 +1,226 @@
-<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{try{
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "primary": "#5af0b3",
-                    "error": "#ffb4ab",
-                    "secondary": "#4edea3",
-                    "background": "#131315",
-                    "on-error": "#690005",
-                    "tertiary-fixed-dim": "#ffb787",
-                    "text-dim": "#52525b",
-                    "secondary-fixed": "#6ffbbe",
-                    "inverse-on-surface": "#313032",
-                    "on-background": "#e5e1e4",
-                    "primary-fixed": "#68fcbf",
-                    "surface-container-highest": "#353437",
-                    "text-primary": "#ffffff",
-                    "on-secondary-fixed": "#002113",
-                    "error-container": "#93000a",
-                    "on-surface": "#e5e1e4",
-                    "on-tertiary-fixed": "#311300",
-                    "on-surface-variant": "#bbcac0",
-                    "surface-tint": "#45dfa4",
-                    "outline": "#85948b",
-                    "tertiary-fixed": "#ffdcc7",
-                    "on-secondary": "#003824",
-                    "primary-fixed-dim": "#45dfa4",
-                    "surface-container-high": "#2a2a2c",
-                    "tertiary": "#ffccad",
-                    "text-muted": "#a1a1aa",
-                    "inverse-primary": "#006c4b",
-                    "tertiary-container": "#ffa668",
-                    "surface-card": "#18181b",
-                    "secondary-fixed-dim": "#4edea3",
-                    "surface-container-lowest": "#0e0e10",
-                    "on-error-container": "#ffdad6",
-                    "outline-variant": "#3c4a42",
-                    "on-primary": "#003825",
-                    "surface-bright": "#39393b",
-                    "secondary-container": "#00a572",
-                    "inverse-surface": "#e5e1e4",
-                    "surface-dim": "#131315",
-                    "on-secondary-fixed-variant": "#005236",
-                    "on-primary-container": "#00563b",
-                    "on-tertiary-container": "#783901",
-                    "on-tertiary-fixed-variant": "#723600",
-                    "surface-variant": "#353437",
-                    "surface-container-low": "#1c1b1d",
-                    "on-primary-fixed": "#002114",
-                    "border-muted": "#27272a",
-                    "on-primary-fixed-variant": "#005137",
-                    "primary-container": "#34d399",
-                    "surface": "#131315",
-                    "surface-container": "#201f22",
-                    "on-secondary-container": "#00311f",
-                    "on-tertiary": "#502400",
-                    "text-secondary": "#e4e4e7"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "container-max": "1024px",
-                    "gutter": "1.5rem",
-                    "card-gap": "1.5rem",
-                    "element-standard": "1rem",
-                    "element-tight": "0.5rem",
-                    "section-v-space": "5rem"
-            },
-            "fontFamily": {
-                    "label-mono": ["JetBrains Mono"],
-                    "display-hero": ["Hanken Grotesk"],
-                    "label-ui": ["Inter"],
-                    "body-intro": ["Inter"],
-                    "headline-subsection": ["Hanken Grotesk"],
-                    "headline-section": ["Hanken Grotesk"],
-                    "display-hero-mobile": ["Hanken Grotesk"],
-                    "body-standard": ["Inter"]
-            },
-            "fontSize": {
-                    "label-mono": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                    "label-ui": ["14px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "body-intro": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-subsection": ["18px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                    "headline-section": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                    "display-hero-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
-                    "body-standard": ["16px", {"lineHeight": "1.625", "fontWeight": "400"}]
-            }
-          },
-        },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokesh Kumar, PhD | Experimental Semiconductor Physics</title>
+  <meta name="description" content="Lokesh Kumar is an Assistant Professor of Physics at NIT Calicut. Research in organic electrochemical transistors, neuromorphic devices, oxide semiconductors, and bioelectronic sensors.">
+  <meta name="author" content="Lokesh Kumar">
+  <meta name="theme-color" content="#131315">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lokesh Kumar, PhD | Experimental Semiconductor Physics">
+  <meta property="og:description" content="Assistant Professor of Physics at NIT Calicut. OECTs, neuromorphic devices, and bioelectronic sensors.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="./">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("color-theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
       }
-    }catch(_e){}}catch(_e){}</script></head><body class="font-body-standard text-body-standard selection:bg-primary/30 selection:text-primary bg-white dark:bg-background transition-colors duration-300">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-surface/90 backdrop-blur-md border-b border-gray-200 dark:border-outline-variant shadow-sm h-16 transition-colors duration-300">
-<div class="flex justify-between items-center h-full px-gutter max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<button class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-surface-container-high focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 transition-colors" id="theme-toggle" type="button">
-<span class="hidden material-symbols-outlined" id="theme-toggle-dark-icon" data-original-icon="dark_mode">dark_mode</span>
-<span class="hidden material-symbols-outlined" id="theme-toggle-light-icon" data-original-icon="light_mode">light_mode</span>
-</button>
-<div class="font-headline-section text-headline-section font-bold text-emerald-600 dark:text-primary">
-                    Lokesh Kumar, PhD
-                </div>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-label-ui text-label-ui text-emerald-600 dark:text-primary border-b-2 border-emerald-600 dark:border-primary pb-1" href="index.html">Home</a>
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="research.html">Research</a>
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="publications.html">Publications</a>
-<a class="font-label-ui text-label-ui text-gray-600 dark:text-on-surface-variant hover:text-emerald-600 dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
-<a class="cursor-pointer active:scale-95 transition-transform bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-4 py-2 rounded-lg font-label-ui inline-block" href="#">Download CV</a>
-</div>
-<div class="md:hidden"><button id="mobile-menu-btn" class="p-2 text-emerald-600 dark:text-primary focus:outline-none"><span class="material-symbols-outlined text-3xl">menu</span></button></div>
-</div>
-</nav><div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-[60] bg-white dark:bg-background p-gutter flex flex-col gap-8 pt-24"><button id="mobile-menu-close" class="absolute top-4 right-4 p-2 text-gray-500 dark:text-on-surface-variant"><span class="material-symbols-outlined text-3xl">close</span></button><nav class="flex flex-col gap-6"><a class="font-label-ui text-2xl text-emerald-600 dark:text-primary" href="index.html">Home</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="research.html">Research</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="publications.html">Publications</a><a class="font-label-ui text-2xl text-gray-600 dark:text-on-surface-variant" href="contact.html">Contact</a></nav><a class="bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-6 py-4 rounded-lg font-label-ui text-center text-xl" href="#">Download CV</a></div>
-<main class="pt-16">
-<!-- Hero Section -->
-<section class="relative min-h-[70vh] flex items-center overflow-hidden">
-<div class="relative z-10 max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-12 items-center w-full">
-<div class="space-y-6">
-<div class="inline-block bg-emerald-100 dark:bg-primary/10 border border-emerald-200 dark:border-primary/20 px-3 py-1 rounded-full">
-<span class="text-emerald-700 dark:text-primary font-label-mono text-label-mono tracking-wider">EXPERIMENTAL SEMICONDUCTOR PHYSICS</span>
-</div>
-<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-gray-900 dark:text-white">Assistant Professor <br class=""><span class="text-emerald-600 dark:text-primary">of Physics</span></h1>
-<p class="font-body-intro text-body-intro text-gray-600 dark:text-on-surface-variant max-w-lg">Department of Physics, NIT Calicut. Pioneering the next generation of flexible electronics through advanced semiconductor fabrication and precision characterization.</p>
-<div class="flex flex-wrap gap-4">
-<a href="mailto:lokesh@nitc.ac.in" class="bg-emerald-600 dark:bg-primary text-white dark:text-on-primary px-6 py-3 rounded-lg font-label-ui font-semibold flex items-center gap-2 transition-all hover:shadow-[0_0_20px_rgba(90,240,179,0.3)] w-full sm:w-auto justify-center">
-                            View Research <span class="material-symbols-outlined">arrow_forward</span>
-</a>
-<a href="mailto:lokesh@nitc.ac.in" class="border border-gray-300 dark:border-outline text-gray-700 dark:text-white px-6 py-3 rounded-lg font-label-ui font-semibold hover:bg-gray-100 dark:hover:bg-white/5 transition-colors w-full sm:w-auto text-center">
-                            Collaborate
-                        </a>
-</div>
-</div>
-<div class="relative flex justify-center md:justify-end mt-8 md:mt-0">
-<div class="w-72 md:w-96 overflow-hidden border border-gray-200 dark:border-outline-variant shadow-2xl rounded-3xl">
-<!-- Replace the src below with your professional profile photo URL -->
-<img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Dr. Lokesh Kumar - Professional Portrait" src="https://lh3.googleusercontent.com/aida/AP1WRLvF-V3PmemIepKm77544oTWoUrgLCTSaWsvnLIOPRmxHQIaNoito9D8doAWAPXPaxKiGq_CQ6r0hWQEMzdGgZdT_S8fO0KJdL0RlcDU_KWQX0_RTwoX8k5b2c_cm2NWwrC-M1pGw7faJ0NzZLiki1OCv8k3S0I4FdMgeSPOkAQ_x6ZCAZxtQOBeqxKT8Ex4OPU0oM_ir6SE5lJ2KbN5sZsfjon8D-SUxYm_fdknW5ieqj7-TCPkWozno1Y">
-</div>
-<!-- Technical Badge -->
-<div class="absolute bg-white/80 dark:bg-surface-card/80 backdrop-blur-md p-4 rounded-xl shadow-xl max-w-[200px] border border-gray-200 dark:border-outline-variant z-20 bottom-4 left-4">
-<div class="flex items-center gap-2 mb-2">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary" data-original-icon="microscope">circle</span>
-<span class="font-label-mono text-[12px] text-emerald-700 dark:text-primary">LAB STATUS</span>
-</div>
-<p class="text-[14px] leading-tight text-gray-900 dark:text-white font-medium">Currently investigating thin-film transport dynamics.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Biography Section-->
-<section class="py-section-v-space max-w-container-max mx-auto px-gutter">
-<div class="grid md:grid-cols-3 gap-12">
-<div class="md:col-span-1">
-<h2 class="font-headline-section text-headline-section text-gray-900 dark:text-white mb-4">Professional <span class="text-emerald-600 dark:text-primary">Bio</span></h2>
-<div class="h-1 w-12 bg-emerald-600 dark:bg-primary rounded-full"></div>
-</div>
-<div class="md:col-span-2 space-y-6">
-<p class="font-body-standard text-body-standard text-gray-600 dark:text-on-surface-variant leading-relaxed">
-                        Lokesh Kumar is an experimental physicist dedicated to bridging the gap between fundamental semiconductor physics and scalable industrial applications. His work focuses on Organic Electrochemical Transistors (OECTs), oxide semiconductors (ZnO, IGZO), printed flexible neuromorphic devices, and bioelectronic sensors for environmental and health monitoring.
-                    </p>
-<p class="font-body-standard text-body-standard text-gray-600 dark:text-on-surface-variant leading-relaxed">
-                        Currently serving as an Assistant Professor of Physics at NIT Calicut, he leads a multi-disciplinary team. His research career highlights include an IGSTC project collaboration with the Karlsruhe Institute of Technology (KIT), advancing sustainable manufacturing processes in microelectronics.
-                    </p>
-</div>
-</div>
-</section>
-<!-- Technical Expertise Grid -->
-<section class="py-section-v-space bg-gray-50 dark:bg-surface-container-lowest transition-colors">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-section text-headline-section text-gray-900 dark:text-white mb-2">Technical Expertise</h2>
-<p class="text-gray-500 dark:text-text-muted font-label-mono">CORE COMPETENCIES &amp; DOMAIN KNOWLEDGE</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-card-gap">
-<!-- Fabrication -->
-<div class="expertise-card p-8 bg-white dark:bg-surface-card border border-gray-200 dark:border-outline-variant rounded-xl transition-all duration-300 group duration-700 opacity-100 translate-y-0 hover:shadow-lg">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary text-4xl mb-6 group-hover:scale-110 transition-transform">precision_manufacturing</span>
-<h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white mb-3">Fabrication</h3>
-<p class="text-gray-500 dark:text-text-muted text-sm mb-4">Cleanroom processing, photolithography, and thin-film deposition techniques.</p>
-<ul class="space-y-1">
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Photolithography (SUSS MJB4)</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> E-beam Evaporation</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Plasma Etching (Nordson AP-300)</li>
-</ul>
-</div>
-<!-- Printed Electronics -->
-<div class="expertise-card p-8 bg-white dark:bg-surface-card border border-gray-200 dark:border-outline-variant rounded-xl transition-all duration-300 group duration-700 opacity-100 translate-y-0 hover:shadow-lg">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary text-4xl mb-6 group-hover:scale-110 transition-transform">print</span>
-<h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white mb-3">Printed Electronics</h3>
-<p class="text-gray-500 dark:text-text-muted text-sm mb-4">Inkjet printing and roll-to-roll manufacturing for flexible substrates.</p>
-<ul class="space-y-1">
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Inkjet Printing (JetLab 4)</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Aerosol Jet Printing (Optomec 5X)</li>
-</ul>
-</div>
-<!-- Characterization -->
-<div class="expertise-card p-8 bg-white dark:bg-surface-card border border-gray-200 dark:border-outline-variant rounded-xl transition-all duration-300 group duration-700 opacity-100 translate-y-0 hover:shadow-lg">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary text-4xl mb-6 group-hover:scale-110 transition-transform">analytics</span>
-<h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white mb-3">Characterization</h3>
-<p class="text-gray-500 dark:text-text-muted text-sm mb-4">Advanced microscopic and spectroscopic analysis of materials.</p>
-<ul class="space-y-1">
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> SEM / AFM</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> XRD Analysis</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Keithley 4200-SCS</li>
-</ul>
-</div>
-<!-- Software -->
-<div class="expertise-card p-8 bg-white dark:bg-surface-card border border-gray-200 dark:border-outline-variant rounded-xl transition-all duration-300 group duration-700 opacity-100 translate-y-0 hover:shadow-lg">
-<span class="material-symbols-outlined text-emerald-600 dark:text-primary text-4xl mb-6 group-hover:scale-110 transition-transform">terminal</span>
-<h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white mb-3">Software</h3>
-<p class="text-gray-500 dark:text-text-muted text-sm mb-4">Simulation, data modeling, and automated instrumentation control.</p>
-<ul class="space-y-1">
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> Python / LabView</li>
-<li class="flex items-center gap-2 text-[12px] font-label-mono text-emerald-700 dark:text-primary/80"><span class="w-1 h-1 bg-emerald-600 dark:bg-primary rounded-full"></span> COMSOL</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Education Timeline -->
-<section class="py-section-v-space max-w-container-max mx-auto px-gutter">
-<div class="grid md:grid-cols-3 gap-12">
-<div class="md:col-span-1">
-<h2 class="font-headline-section text-headline-section text-gray-900 dark:text-white mb-4">Education <span class="text-emerald-600 dark:text-primary">Timeline</span></h2>
-<p class="text-gray-600 dark:text-text-muted font-body-standard">A chronological journey of academic excellence and research evolution.</p>
-</div>
-<div class="md:col-span-2 relative timeline-line pl-10 space-y-12">
-<!-- PhD -->
-<div class="relative transition-all duration-700 opacity-100 translate-y-0"><div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-emerald-600 dark:bg-primary ring-4 ring-emerald-200 dark:ring-primary/20"></div><div><span class="font-label-mono text-label-mono text-emerald-600 dark:text-primary mb-1 block">2018 — 2024</span><h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white">PhD, Semiconductor Physics | IIT Bombay</h3><p class="text-gray-600 dark:text-on-surface-variant mt-1">Indian Institute of Technology, Bombay</p><p class="text-gray-500 dark:text-text-muted text-sm mt-3 italic leading-relaxed">Thesis: "Organic Electrochemical Transistors for Neuromorphic Devices and Sensors"</p></div></div>
-<!-- Masters -->
-<div class="relative transition-all duration-700 opacity-100 translate-y-0"><div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-gray-300 dark:bg-outline ring-4 ring-gray-100 dark:ring-outline/10"></div><div><span class="font-label-mono text-label-mono text-emerald-600 dark:text-primary mb-1 block">2014 — 2016</span><h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white">MSc, Semiconductor Physics | IIT Roorkee</h3><p class="text-gray-600 dark:text-on-surface-variant mt-1">Indian Institute of Technology, Roorkee</p><p class="text-gray-500 dark:text-text-muted text-sm mt-3 leading-relaxed">1st Division. Project on 2D spin simulation in Python.</p></div></div>
-<!-- Bachelor -->
-<div class="relative transition-all duration-700 opacity-100 translate-y-0"><div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-gray-300 dark:bg-outline ring-4 ring-gray-100 dark:ring-outline/10"></div><div><span class="font-label-mono text-label-mono text-emerald-600 dark:text-primary mb-1 block">2011 — 2014</span><h3 class="font-headline-subsection text-headline-subsection text-gray-900 dark:text-white">BSc, Physics | St. Stephen's College, Delhi University</h3><p class="text-gray-600 dark:text-on-surface-variant mt-1">St. Stephen's College, Delhi University</p><p class="text-gray-500 dark:text-text-muted text-sm mt-3 leading-relaxed">1st Division.</p></div></div>
-</div>
-</div>
-</section>
-<!-- Interactive Research Interest Tags -->
-<section class="py-16 border-t border-gray-200 dark:border-outline-variant bg-gray-50 dark:bg-surface-container-low overflow-hidden transition-colors">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="flex flex-wrap justify-center gap-4">
-<span class="px-4 py-2 rounded-full bg-emerald-100 dark:bg-primary/10 border border-emerald-200 dark:border-primary/20 text-emerald-700 dark:text-primary font-label-mono text-[13px] whitespace-nowrap">Organic Electrochemical Transistors (OECTs)</span>
-<span class="px-4 py-2 rounded-full bg-emerald-100 dark:bg-primary/10 border border-emerald-200 dark:border-primary/20 text-emerald-700 dark:text-primary font-label-mono text-[13px] whitespace-nowrap">Oxide Semiconductors (ZnO, IGZO)</span>
-<span class="px-4 py-2 rounded-full bg-emerald-100 dark:bg-primary/10 border border-emerald-200 dark:border-primary/20 text-emerald-700 dark:text-primary font-label-mono text-[13px] whitespace-nowrap">Printed Flexible Neuromorphic Devices</span>
-<span class="px-4 py-2 rounded-full bg-emerald-100 dark:bg-primary/10 border border-emerald-200 dark:border-primary/20 text-emerald-700 dark:text-primary font-label-mono text-[13px] whitespace-nowrap">Bioelectronic Sensors</span>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-gray-100 dark:bg-surface-container-lowest border-t border-gray-200 dark:border-outline-variant w-full py-section-v-space transition-colors">
-<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-8">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="font-label-mono text-label-mono text-emerald-600 dark:text-primary uppercase tracking-widest">Lokesh Kumar</span>
-<p class="font-body-standard text-body-standard text-gray-500 dark:text-text-muted text-center md:text-left max-w-sm">
-                    © 2024 Lokesh Kumar • Experimental Semiconductor Physics. All Rights Reserved.
-                </p>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="text-gray-600 dark:text-text-muted hover:text-emerald-500 dark:hover:text-secondary transition-colors font-body-standard text-body-standard" href="mailto:lokesh@nitc.ac.in">Email</a>
-<a class="text-gray-600 dark:text-text-muted hover:text-emerald-500 dark:hover:text-secondary transition-colors font-body-standard text-body-standard" href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079">LinkedIn</a>
-<a class="text-gray-600 dark:text-text-muted hover:text-emerald-500 dark:hover:text-secondary transition-colors font-body-standard text-body-standard" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;hl=en&amp;user=B5zMjo4AAAAJ">Scholar</a>
-<a class="text-gray-600 dark:text-text-muted hover:text-emerald-500 dark:hover:text-secondary transition-colors font-body-standard text-body-standard" href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5">Affiliation</a>
-</div>
-</div>
-</footer>
-<script>
-        // Theme toggle functionality
-        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        // Change the icons inside the button based on previous settings
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            themeToggleLightIcon.classList.remove('hidden');
-        } else {
-            themeToggleDarkIcon.classList.remove('hidden');
-        }
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Lokesh Kumar, PhD</a>
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme">
+          <span class="material-symbols-outlined icon-dark" aria-hidden="true">dark_mode</span>
+          <span class="material-symbols-outlined icon-light" aria-hidden="true">light_mode</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+        <button type="button" class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        var themeToggleBtn = document.getElementById('theme-toggle');
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="assets/Lokesh_Kumar_CV.pdf">Download CV</a>
+  </div>
 
-        themeToggleBtn.addEventListener('click', function() {
-            // toggle icons inside button
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
+  <main id="main">
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <span class="badge">Experimental Semiconductor Physics</span>
+          <h1 class="display font-display">Assistant Professor <br><span class="accent">of Physics</span></h1>
+          <p class="lead">Department of Physics, NIT Calicut. Pioneering the next generation of flexible electronics through advanced semiconductor fabrication and precision characterization.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="research.html">
+              View Research
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            </a>
+            <a class="btn btn-outline" href="contact.html">Collaborate</a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait">
+            <img
+              src="assets/profile.jpg"
+              srcset="assets/profile-sm.jpg 400w, assets/profile.jpg 800w"
+              sizes="(max-width: 768px) 288px, 384px"
+              width="800"
+              height="1067"
+              alt="Dr. Lokesh Kumar, professional portrait"
+              fetchpriority="high">
+          </div>
+          <div class="lab-status">
+            <div class="label">
+              <span class="material-symbols-outlined" aria-hidden="true">science</span>
+              LAB STATUS
+            </div>
+            <p>Currently investigating thin-film transport dynamics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            // if set via local storage previously
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-            // if NOT set via local storage previously
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
-            }
-            
-        });
+    <section class="section">
+      <div class="container grid-2 bio">
+        <div>
+          <h2 class="section-title font-headline">Professional <span class="accent">Bio</span></h2>
+          <div class="accent-bar" aria-hidden="true"></div>
+        </div>
+        <div>
+          <p class="muted">
+            Lokesh Kumar is an experimental physicist dedicated to bridging the gap between fundamental semiconductor physics and scalable industrial applications. His work focuses on Organic Electrochemical Transistors (OECTs), oxide semiconductors (ZnO, IGZO), printed flexible neuromorphic devices, and bioelectronic sensors for environmental and health monitoring.
+          </p>
+          <p class="muted">
+            Currently serving as an Assistant Professor of Physics at NIT Calicut, he leads a multi-disciplinary team. His research career highlights include an IGSTC project collaboration with the Karlsruhe Institute of Technology (KIT), advancing sustainable manufacturing processes in microelectronics.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        // Micro-interaction for hover effects on navigation
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                link.style.opacity = '0.8';
-            });
-            link.addEventListener('mouseleave', () => {
-                link.style.opacity = '1';
-            });
-        });
+    <section class="section bg-muted">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:3rem">
+          <h2 class="section-title font-headline">Technical Expertise</h2>
+          <p class="font-mono muted">CORE COMPETENCIES &amp; DOMAIN KNOWLEDGE</p>
+        </div>
+        <div class="grid-4">
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">precision_manufacturing</span>
+            <h3 class="card-title">Fabrication</h3>
+            <p class="muted" style="font-size:0.875rem;margin:0">Cleanroom processing, photolithography, and thin-film deposition techniques.</p>
+            <ul>
+              <li>Photolithography (SUSS MJB4)</li>
+              <li>E-beam Evaporation</li>
+              <li>Plasma Etching (Nordson AP-300)</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">print</span>
+            <h3 class="card-title">Printed Electronics</h3>
+            <p class="muted" style="font-size:0.875rem;margin:0">Inkjet printing and roll-to-roll manufacturing for flexible substrates.</p>
+            <ul>
+              <li>Inkjet Printing (JetLab 4)</li>
+              <li>Aerosol Jet Printing (Optomec 5X)</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">analytics</span>
+            <h3 class="card-title">Characterization</h3>
+            <p class="muted" style="font-size:0.875rem;margin:0">Advanced microscopic and spectroscopic analysis of materials.</p>
+            <ul>
+              <li>SEM / AFM</li>
+              <li>XRD Analysis</li>
+              <li>Keithley 4200-SCS</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">terminal</span>
+            <h3 class="card-title">Software</h3>
+            <p class="muted" style="font-size:0.875rem;margin:0">Simulation, data modeling, and automated instrumentation control.</p>
+            <ul>
+              <li>Python / LabView</li>
+              <li>COMSOL</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        // Simple Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1
-        };
+    <section class="section">
+      <div class="container grid-2 timeline-layout">
+        <div>
+          <h2 class="section-title font-headline">Education <span class="accent">Timeline</span></h2>
+          <p class="muted">A chronological journey of academic excellence and research evolution.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item major reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">2018 — 2024</span>
+            <h3 class="card-title">PhD, Semiconductor Physics | IIT Bombay</h3>
+            <p class="muted" style="margin:0.25rem 0">Indian Institute of Technology, Bombay</p>
+            <p class="muted" style="font-size:0.875rem;font-style:italic;margin:0.75rem 0 0">Thesis: "Organic Electrochemical Transistors for Neuromorphic Devices and Sensors"</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">2014 — 2016</span>
+            <h3 class="card-title">MSc, Semiconductor Physics | IIT Roorkee</h3>
+            <p class="muted" style="margin:0.25rem 0">Indian Institute of Technology, Roorkee</p>
+            <p class="muted" style="font-size:0.875rem;margin:0.75rem 0 0">1st Division. Project on 2D spin simulation in Python.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">2011 — 2014</span>
+            <h3 class="card-title">BSc, Physics | St. Stephen's College, Delhi University</h3>
+            <p class="muted" style="margin:0.25rem 0">St. Stephen's College, Delhi University</p>
+            <p class="muted" style="font-size:0.875rem;margin:0.75rem 0 0">1st Division.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
+    <section class="section-sm bg-muted" style="border-top:1px solid var(--border)">
+      <div class="container tag-cloud">
+        <span class="tag">Organic Electrochemical Transistors (OECTs)</span>
+        <span class="tag">Oxide Semiconductors (ZnO, IGZO)</span>
+        <span class="tag">Printed Flexible Neuromorphic Devices</span>
+        <span class="tag">Bioelectronic Sensors</span>
+      </div>
+    </section>
+  </main>
 
-        document.querySelectorAll('.expertise-card, .timeline-line > div').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            observer.observe(el);
-        });
-    </script>
-<script>const menuBtn = document.getElementById('mobile-menu-btn'); const closeBtn = document.getElementById('mobile-menu-close'); const mobileMenu = document.getElementById('mobile-menu'); if (menuBtn && mobileMenu) { menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }); } if (closeBtn && mobileMenu) { closeBtn.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }); } const mobileLinks = mobileMenu.querySelectorAll('nav a'); mobileLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }); });</script></body></html>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">LOKESH KUMAR</span>
+        <p class="footer-copy">© 2026 Lokesh Kumar · Experimental Semiconductor Physics. All rights reserved.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:lokesh@nitc.ac.in">Email</a>
+        <a href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=B5zMjo4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://orcid.org/0000-0001-7667-8422" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://nitc.ac.in/department/physics/faculty-and-staff/faculty/5566ed19-19e4-4a1f-b4d2-89456e2442d5" target="_blank" rel="noopener noreferrer">Affiliation</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,420 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lokesh Kumar, PhD - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body { font-family: system-ui, -apple-system, sans-serif; }
-    .nav-link { transition: color 0.2s; cursor: pointer; }
-    .nav-link:hover { color: #34d399; /* emerald-400 */ }
-    
-    /* Smooth fade in for sections */
-    .page-section {
-        animation: fadeIn 0.3s ease-in-out;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(5px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    /* Custom scrollbar for a sleeker look */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #09090b; }
-    ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
-  </style>
-</head>
-<body class="bg-zinc-950 text-zinc-200 min-h-screen flex flex-col">
+# Academic website — Lokesh Kumar, PhD
 
-  <!-- Navigation -->
-  <nav class="w-full max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center border-b border-zinc-800 gap-4 md:gap-0 sticky top-0 bg-zinc-950/90 backdrop-blur-sm z-50">
-    <a href="#" onclick="showSection('home', event)" class="text-2xl font-semibold hover:text-emerald-400 transition-colors">Lokesh Kumar, PhD</a>
-    <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm">
-      <a href="#home" onclick="showSection('home', event)" id="nav-home" class="nav-link text-emerald-400 font-medium">Home & Bio</a>
-      <a href="#research" onclick="showSection('research', event)" id="nav-research" class="nav-link text-zinc-400">Research Highlights</a>
-      <a href="#publications" onclick="showSection('publications', event)" id="nav-publications" class="nav-link text-zinc-400">Publications & Patents</a>
-      <a href="#contact" onclick="showSection('contact', event)" id="nav-contact" class="nav-link text-zinc-400">Contact</a>
-    </div>
-  </nav>
+Static personal/academic site for [GitHub Pages](https://pages.github.com/).
 
-  <!-- Main Content Container -->
-  <main class="flex-grow">
-      
-      <!-- ================= HOME SECTION ================= -->
-      <div id="home" class="page-section block">
-          <!-- Hero -->
-          <section class="max-w-5xl mx-auto px-6 pt-20 pb-12">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-              <div class="md:w-2/3">
-                <div class="inline-block px-3 py-1 mb-4 rounded-full bg-emerald-400/10 text-emerald-400 text-sm font-medium border border-emerald-400/20">
-                    Experimental Semiconductor Physicist
-                </div>
-                <h1 class="text-5xl sm:text-6xl font-bold tracking-tighter mb-4 text-white">Lokesh Kumar, PhD</h1>
-                <p class="text-xl sm:text-2xl text-emerald-400 mb-6 font-medium">Postdoctoral Research Associate</p>
-                <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-                    Specializing in Organic Electrochemical Transistors (OECTs), Oxide Semiconductors, Neuromorphic Computing, and Bioelectronic Sensors.
-                </p>
-                <div class="mt-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center text-zinc-300">
-                    <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-building-columns text-emerald-500"></i> IIT Bombay
-                    </div>
-                    <span class="hidden sm:inline text-zinc-700">•</span>
-                    <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-globe text-emerald-500"></i> Indo-German WISER Project (with KIT, Germany)
-                    </div>
-                </div>
-              </div>
-              <div class="md:w-1/3 w-full max-w-sm mx-auto">
-                <div class="rounded-3xl shadow-2xl w-full aspect-[3/4] bg-zinc-900 flex items-center justify-center overflow-hidden border border-zinc-800 relative group">
-                    <img src="your-photo.jpg" alt="Lokesh Kumar" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="hidden flex-col items-center gap-4 text-zinc-600 w-full h-full justify-center bg-zinc-900">
-                        <i class="fa-solid fa-user-tie text-6xl"></i>
-                        <span class="text-sm">Profile Photo</span>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </section>
+## Live site
 
-          <!-- Bio & Education -->
-          <section class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/50">
-            <div class="grid md:grid-cols-2 gap-16">
-                <!-- Bio -->
-                <div>
-                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-3">
-                        <i class="fa-solid fa-microscope text-emerald-400"></i> About My Research
-                    </h2>
-                    <div class="prose prose-invert max-w-none text-zinc-300 space-y-4 leading-relaxed">
-                        <p>Experimental physicist with over 8 years of hands-on experience in thin-film transistor (TFT) fabrication and characterization. My early PhD research focused on solution-processed oxide semiconductors (ZnO, IGZO, In₂O₃) and high-k dielectrics.</p>
-                        <p>Currently, my work expands into low-voltage organic transistors (OECTs), printed flexible neuromorphic devices emulating synaptic plasticity, and bioelectronic platforms for cancer-associated extracellular vesicle (EV) detection.</p>
-                        <p>I am leading the technical investigation for the Indo-German Science & Technology Centre (IGSTC) WISER project, collaborating with the Karlsruhe Institute of Technology (KIT) to integrate dip-pen nanolithography lipid microarrays on transistor gates.</p>
-                    </div>
-                </div>
-                
-                <!-- Education -->
-                <div>
-                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-3">
-                        <i class="fa-solid fa-graduation-cap text-emerald-400"></i> Education
-                    </h2>
-                    <div class="space-y-6">
-                        <div class="relative pl-6 border-l border-zinc-800">
-                            <div class="absolute w-3 h-3 bg-emerald-400 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
-                            <h3 class="text-lg font-medium text-white">PhD, Semiconductor Physics</h3>
-                            <p class="text-emerald-400 text-sm mb-1">IIT Bombay (2018 - 2024)</p>
-                            <p class="text-zinc-400 text-sm">Thesis: "Organic Electrochemical Transistors for Neuromorphic Devices and Sensors"</p>
-                        </div>
-                        <div class="relative pl-6 border-l border-zinc-800">
-                            <div class="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
-                            <h3 class="text-lg font-medium text-white">MSc, Semiconductor Physics</h3>
-                            <p class="text-emerald-400 text-sm mb-1">IIT Roorkee (2014 - 2016)</p>
-                            <p class="text-zinc-400 text-sm">1st Division. Project on 2D spin simulation in Python.</p>
-                        </div>
-                        <div class="relative pl-6 border-l border-transparent">
-                            <div class="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[6.5px] top-1.5 ring-4 ring-zinc-950"></div>
-                            <h3 class="text-lg font-medium text-white">BSc, Physics</h3>
-                            <p class="text-emerald-400 text-sm">St. Stephen's College, Delhi University (2011 - 2014)</p>
-                            <p class="text-zinc-400 text-sm">1st Division.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </section>
+After enabling Pages, the URL is typically:
 
-          <!-- Technical Expertise -->
-          <section class="max-w-5xl mx-auto px-6 py-12 mb-12 border-t border-zinc-800/50">
-             <h2 class="text-2xl font-semibold mb-8 text-white flex items-center gap-3">
-                 <i class="fa-solid fa-microchip text-emerald-400"></i> Technical Expertise
-             </h2>
-             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                 
-                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
-                     <i class="fa-solid fa-layer-group text-2xl text-zinc-400 mb-4 block"></i>
-                     <h3 class="text-white font-medium mb-2">Fabrication & Cleanroom</h3>
-                     <p class="text-sm text-zinc-400 leading-relaxed">Photolithography, Mask Aligners (SUSS MJB4), E-beam Evaporation, Plasma Etching (Nordson AP-300), Spin Coating.</p>
-                 </div>
+- User/org site: `https://USERNAME.github.io/`
+- Project site: `https://USERNAME.github.io/cv_website/`
 
-                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
-                     <i class="fa-solid fa-print text-2xl text-zinc-400 mb-4 block"></i>
-                     <h3 class="text-white font-medium mb-2">Printed Electronics</h3>
-                     <p class="text-sm text-zinc-400 leading-relaxed">Screen Printing, Inkjet Printing (JetLab 4), and Aerosol Jet Printing (Optomec 5X) for flexible electronics.</p>
-                 </div>
+All links are **relative**, so either layout works.
 
-                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
-                     <i class="fa-solid fa-chart-line text-2xl text-zinc-400 mb-4 block"></i>
-                     <h3 class="text-white font-medium mb-2">Characterization</h3>
-                     <p class="text-sm text-zinc-400 leading-relaxed">Parameter Analyzers (Keithley 4200-SCS, Keysight 2900A), AutoLAB, EIS, Cyclic Voltammetry.</p>
-                 </div>
+## Structure
 
-                 <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/80 hover:border-emerald-500/30 transition-colors">
-                     <i class="fa-solid fa-code text-2xl text-zinc-400 mb-4 block"></i>
-                     <h3 class="text-white font-medium mb-2">Software & Modeling</h3>
-                     <p class="text-sm text-zinc-400 leading-relaxed">Silvaco Atlas (TCAD), ALPS, Python (2D Spin Simulation), LabView, Fortran, C++.</p>
-                 </div>
+```text
+cv_website/
+├── index.html              # Home / bio
+├── research.html           # Research timeline
+├── publications.html       # Papers & patents
+├── contact.html            # Contact + inquiry form
+├── 404.html                # Custom not-found page
+├── favicon.svg
+├── css/styles.css          # Design system (no Tailwind CDN)
+├── js/main.js              # Theme, mobile nav, form, reveal
+├── assets/
+│   ├── profile.jpg         # Optimized portrait
+│   ├── profile-sm.jpg
+│   ├── lab.jpg             # Optimized lab image
+│   ├── lab-sm.jpg
+│   └── Lokesh_Kumar_CV.pdf # Add your CV PDF here
+└── luminescent_precision/  # Design tokens (reference)
+```
 
-             </div>
-          </section>
-      </div>
+## Deploy on GitHub Pages
 
-      <!-- ================= RESEARCH HIGHLIGHTS SECTION ================= -->
-      <div id="research" class="page-section hidden">
-          <section class="max-w-4xl mx-auto px-6 py-16">
-            <h1 class="text-4xl font-semibold mb-2 text-white">Research Highlights</h1>
-            <h2 class="text-xl text-zinc-400 mb-12">News, Updates & Milestones</h2>
+1. Create a GitHub repository (e.g. `cv_website` or `USERNAME.github.io`).
+2. Push this folder to the default branch (`main`).
+3. **Settings → Pages → Build and deployment**
+   - Source: **Deploy from a branch**
+   - Branch: `main` / root (`/`)
+4. Wait a minute, then open the published URL.
 
-            <div class="space-y-12">
-              <div class="relative pl-6 border-l-2 border-emerald-400">
-                <div class="absolute w-4 h-4 bg-emerald-400 rounded-full -left-[9px] top-0 shadow-[0_0_10px_rgba(52,211,153,0.5)]"></div>
-                <p class="text-emerald-400 text-sm font-bold tracking-wide uppercase">April 2026</p>
-                <p class="text-xl font-medium mt-2 leading-snug text-white">Neuromorphic Work Accepted for Publication</p>
-                <p class="text-zinc-300 mt-2 italic">"Bio-Realistic Emulation of Complex Synaptic Plasticity and Logic via a Fully Screen-Printed Flexible Neuromorphic Transistor"</p>
-                <p class="text-zinc-400 mt-3 leading-relaxed">First-author paper officially accepted in <span class="font-medium text-emerald-300">Applied Materials Today</span>. Demonstrates Ebbinghaus forgetting curve, STDP, paired-pulse facilitation, and OR logic in a low-energy (~24 nJ) fully screen-printed OECT.</p>
-              </div>
+Optional custom domain: add a `CNAME` file with your domain and configure DNS.
 
-              <div class="relative pl-6 border-l-2 border-zinc-800">
-                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
-                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">February 2026</p>
-                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Manuscript Resubmission</p>
-                <p class="text-zinc-400 mt-2 leading-relaxed">Resubmitted the neuromorphic OECT manuscript to Applied Materials Today with added STDP data and enhanced mechanical endurance results.</p>
-              </div>
+## Before you go live
 
-              <div class="relative pl-6 border-l-2 border-zinc-800">
-                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
-                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2025</p>
-                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Carbon Publication</p>
-                <p class="text-zinc-400 mt-2 leading-relaxed">First-author paper "Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device Based on Ion Gel Dielectric" published in <span class="italic">Carbon</span> (IF 11.6).</p>
-              </div>
+### 1. Add your CV PDF
 
-              <div class="relative pl-6 border-l-2 border-zinc-800">
-                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
-                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2024</p>
-                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Chemical Science Publication</p>
-                <p class="text-zinc-400 mt-2 leading-relaxed">First-author work on an ultrasensitive OECT biosensor for aromatic water pollutants published in <span class="italic">Chemical Science</span> (IF 9.8).</p>
-              </div>
-              
-              <div class="relative pl-6 border-l-2 border-transparent">
-                <div class="absolute w-4 h-4 bg-zinc-700 rounded-full -left-[9px] top-0"></div>
-                <p class="text-zinc-500 text-sm font-bold tracking-wide uppercase">2024</p>
-                <p class="text-lg font-medium mt-2 leading-snug text-zinc-200">Conference Highlights</p>
-                <p class="text-zinc-400 mt-2 leading-relaxed">Presented poster to the Indian Union Minister and German Federal Minister of Research. Also presented at the Indo-UK Biosensor Workshop 2024 (NanoBios Lab, IIT Bombay).</p>
-              </div>
-            </div>
-          </section>
-      </div>
+Place your real CV at:
 
-      <!-- ================= PUBLICATIONS & PATENTS SECTION ================= -->
-      <div id="publications" class="page-section hidden">
-          <section class="max-w-4xl mx-auto px-6 py-16">
-            <h1 class="text-4xl font-semibold mb-12 text-white">Publications & Patents</h1>
+```text
+assets/Lokesh_Kumar_CV.pdf
+```
 
-            <!-- Selected Publications -->
-            <h2 class="text-2xl font-semibold mb-6 text-emerald-400 border-b border-zinc-800 pb-2">Selected Publications</h2>
-            <div class="space-y-8 mb-16">
-              <div class="group bg-zinc-900/30 p-5 rounded-xl border border-zinc-800 hover:border-emerald-500/40 transition-all">
-                <p class="text-lg font-medium leading-snug text-white group-hover:text-emerald-300 transition-colors">"Bio-Realistic Emulation of Complex Synaptic Plasticity and Logic via a Fully Screen-Printed Flexible Neuromorphic Transistor"</p>
-                <p class="text-zinc-400 mt-2 text-sm leading-relaxed">L. Kumar, S. Kurup, B. B. Bhatt, and D. Gupta</p>
-                <div class="mt-3 flex items-center gap-3">
-                    <span class="bg-emerald-400/10 text-emerald-400 px-2.5 py-1 rounded text-xs font-semibold border border-emerald-400/20">Accepted April 2026</span>
-                    <span class="text-zinc-500 text-sm"><span class="italic text-zinc-300">Applied Materials Today</span> • First author</span>
-                </div>
-              </div>
+All **Download CV** buttons already point there.
 
-              <div class="group bg-zinc-900/30 p-5 rounded-xl border border-zinc-800 hover:border-emerald-500/40 transition-all">
-                <p class="text-lg font-medium leading-snug text-white group-hover:text-emerald-300 transition-colors">"Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device Based on Ion Gel Dielectric"</p>
-                <p class="text-zinc-400 mt-2 text-sm leading-relaxed">L. Kumar, B. B. Bhatt, D. Gupta</p>
-                <div class="mt-3 flex items-center gap-3">
-                    <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded text-xs font-semibold border border-zinc-700">Published 2025</span>
-                    <span class="text-zinc-500 text-sm"><span class="italic text-zinc-300">Carbon, 247, 120946</span> (IF: 11.6) • First author</span>
-                </div>
-              </div>
+### 2. Optional: Form backend
 
-              <div class="group bg-zinc-900/30 p-5 rounded-xl border border-zinc-800 hover:border-emerald-500/40 transition-all">
-                <p class="text-lg font-medium leading-snug text-white group-hover:text-emerald-300 transition-colors">"Ultrasensitive Detection of Aromatic Water Pollutants Through Protein Immobilization Driven OECTs"</p>
-                <p class="text-zinc-400 mt-2 text-sm leading-relaxed">L. Kumar, S. Sahu, S. Das, D. Gupta, R. Ananda</p>
-                <div class="mt-3 flex items-center gap-3">
-                    <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded text-xs font-semibold border border-zinc-700">Published 2024</span>
-                    <span class="text-zinc-500 text-sm"><span class="italic text-zinc-300">Chemical Science, 15, 710–719</span> (IF: 9.8) • Co-First author</span>
-                </div>
-              </div>
-              
-              <div class="group bg-zinc-900/30 p-5 rounded-xl border border-zinc-800 hover:border-emerald-500/40 transition-all">
-                <p class="text-lg font-medium leading-snug text-white group-hover:text-emerald-300 transition-colors">"An ultra-compressible piezoresistive strain and pressure sensor based on RGO-CNT-Melamine foam composite for biomedical sensing"</p>
-                <p class="text-zinc-400 mt-2 text-sm leading-relaxed">B. Bhatt, L. Kumar, A. Kushwaha, D. Gupta</p>
-                <div class="mt-3 flex items-center gap-3">
-                    <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded text-xs font-semibold border border-zinc-700">Published 2021</span>
-                    <span class="text-zinc-500 text-sm"><span class="italic text-zinc-300">Sensors and Actuators A-Physical, 331</span> (IF: 5.0)</span>
-                </div>
-              </div>
-            </div>
+The contact form opens the visitor’s mail client (`mailto:`) so it works with pure static hosting.
 
-            <!-- Patents -->
-            <h2 class="text-2xl font-semibold mb-6 text-emerald-400 border-b border-zinc-800 pb-2">Patents</h2>
-            <div class="grid sm:grid-cols-2 gap-6 mb-8">
-                <!-- Granted -->
-                <div class="bg-zinc-900/50 p-6 rounded-2xl border border-emerald-500/20 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-bl-lg">GRANTED</div>
-                    <i class="fa-solid fa-certificate text-2xl text-emerald-400/50 mb-3 block"></i>
-                    <p class="text-white font-medium mb-2">Protein Immobilized OECT Biosensor for Phenolic Pollutants</p>
-                    <p class="text-sm text-zinc-400">Indian Patent No: 474656</p>
-                </div>
-                
-                <div class="bg-zinc-900/50 p-6 rounded-2xl border border-emerald-500/20 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-bl-lg">GRANTED</div>
-                    <i class="fa-solid fa-certificate text-2xl text-emerald-400/50 mb-3 block"></i>
-                    <p class="text-white font-medium mb-2">OECT Based Biosensor for the Detection of DNA Binding Proteins</p>
-                    <p class="text-sm text-zinc-400">Indian Patent No: 431170</p>
-                </div>
+For server-side delivery without a mail client, use [Formspree](https://formspree.io/) (or similar) and set the form `action` to your endpoint.
 
-                <!-- Published / Filed -->
-                <div class="bg-zinc-900/40 p-6 rounded-2xl border border-blue-500/20 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-bl-lg">PUBLISHED 10/04/2026</div>
-                    <i class="fa-solid fa-file-contract text-2xl text-blue-400/50 mb-3 block"></i>
-                    <p class="text-white font-medium mb-2">Low Voltage Photo-Thermally Reduced Graphene Oxide Transistor Device...</p>
-                    <p class="text-sm text-zinc-400">App No: 202521063172</p>
-                </div>
+### 3. Metrics
 
-                <div class="bg-zinc-900/20 p-6 rounded-2xl border border-zinc-800 relative">
-                    <div class="absolute top-0 right-0 bg-zinc-800 text-zinc-300 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">FILED 2025</div>
-                    <p class="text-white font-medium mb-2 mt-2">Graphite-to-Graphene Transformation via Microwave Assisted Green Synthesis...</p>
-                    <p class="text-sm text-zinc-500">App No: 202521054957</p>
-                </div>
-            </div>
+Publication DOI links are wired for known papers (Carbon, Chemical Science). Update Scholar metrics on the publications page if you reintroduce citation counts.
 
-          </section>
-      </div>
+## Local preview
 
-      <!-- ================= CONTACT SECTION ================= -->
-      <div id="contact" class="page-section hidden">
-          <section class="max-w-4xl mx-auto px-6 py-16">
-            <h1 class="text-4xl font-semibold mb-12 text-white">Get In Touch</h1>
+```bash
+cd cv_website
+python3 -m http.server 8080
+# open http://localhost:8080
+```
 
-            <div class="grid md:grid-cols-2 gap-8 text-lg">
-              
-              <!-- Direct Contact -->
-              <div class="space-y-6">
-                  <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-emerald-500/10 rounded-full flex items-center justify-center text-emerald-400">
-                            <i class="fa-solid fa-envelope text-xl"></i>
-                        </div>
-                        <div>
-                            <p class="font-medium text-zinc-100 text-sm uppercase tracking-wide">Email</p>
-                            <a href="mailto:physicistlk@gmail.com" class="text-zinc-400 hover:text-emerald-400 transition-colors break-all text-base">physicistlk@gmail.com</a>
-                        </div>
-                    </div>
-                  </div>
-                  
-                  <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-emerald-500/10 rounded-full flex items-center justify-center text-emerald-400">
-                            <i class="fa-solid fa-phone text-xl"></i>
-                        </div>
-                        <div>
-                            <p class="font-medium text-zinc-100 text-sm uppercase tracking-wide">Phone</p>
-                            <p class="text-zinc-400 text-base">+91-7060334691</p>
-                        </div>
-                    </div>
-                  </div>
-                  
-                  <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800/50 hover:border-emerald-500/30 transition-colors">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-[#0077b5]/10 rounded-full flex items-center justify-center text-[#0077b5]">
-                            <i class="fa-brands fa-linkedin-in text-xl"></i>
-                        </div>
-                        <div>
-                            <p class="font-medium text-zinc-100 text-sm uppercase tracking-wide">LinkedIn</p>
-                            <a href="https://www.linkedin.com/in/lokesh-kumar-phd-09920079" target="_blank" class="text-zinc-400 hover:text-[#0077b5] transition-colors break-all text-base">
-                                /in/lokesh-kumar-phd-09920079
-                            </a>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-              
-              <!-- Address -->
-              <div class="bg-zinc-900/50 p-8 rounded-2xl border border-zinc-800/50 h-full flex flex-col justify-center">
-                <div class="flex items-center gap-3 mb-6">
-                    <i class="fa-solid fa-location-dot text-2xl text-emerald-400"></i>
-                    <p class="text-xl font-semibold text-white">Current Affiliation</p>
-                </div>
-                <div class="space-y-2 text-zinc-400 leading-relaxed">
-                   <p class="font-medium text-zinc-200">Plastic Electronics and Energy Laboratory</p>
-                   <p>Department of Metallurgical Engineering and Materials Science</p>
-                   <p>Indian Institute of Technology Bombay</p>
-                   <p>Mumbai, Maharashtra 400076, India</p>
-                </div>
-              </div>
-              
-            </div>
-            
-            <!-- References Note -->
-            <div class="mt-12 p-6 rounded-2xl border border-zinc-800/50 bg-zinc-900/30 text-center">
-                <p class="text-zinc-400"><i class="fa-solid fa-users text-zinc-500 mr-2"></i> Academic and professional references (Prof. Dipti Gupta, Prof. Sudhanshu Mallick, Prof. Aswani Yella) available upon request.</p>
-            </div>
-          </section>
-      </div>
-  </main>
+## Design
 
-  <footer class="w-full mx-auto px-6 py-8 text-center text-zinc-600 text-sm border-t border-zinc-900 mt-auto bg-zinc-950">
-    <p>Lokesh Kumar, PhD • Experimental Semiconductor Physicist</p>
-    <p class="mt-2 text-zinc-700">Mumbai, India • Updated April 2026</p>
-  </footer>
-
-  <!-- JavaScript for Navigation -->
-  <script>
-    function showSection(sectionId, event) {
-        if(event) {
-            event.preventDefault();
-        }
-
-        // 1. Hide all sections
-        const sections = document.querySelectorAll('.page-section');
-        sections.forEach(section => {
-            section.classList.remove('block');
-            section.classList.add('hidden');
-        });
-
-        // 2. Show the targeted section
-        const targetSection = document.getElementById(sectionId);
-        if (targetSection) {
-            targetSection.classList.remove('hidden');
-            targetSection.classList.add('block');
-        }
-
-        // 3. Update navigation link styles
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            // Reset to inactive state
-            link.classList.remove('text-emerald-400', 'font-medium');
-            link.classList.add('text-zinc-400');
-        });
-
-        // 4. Set active state on clicked link
-        const activeLink = document.getElementById('nav-' + sectionId);
-        if (activeLink) {
-            activeLink.classList.remove('text-zinc-400');
-            activeLink.classList.add('text-emerald-400', 'font-medium');
-        }
-
-        // 5. Scroll to top when changing pages
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Handle browser back/forward buttons using hash
-    window.addEventListener('hashchange', () => {
-        const hash = window.location.hash.substring(1) || 'home';
-        showSection(hash);
-    });
-
-    // Run on initial load to check if a specific section was linked via URL hash
-    window.addEventListener('DOMContentLoaded', () => {
-        const hash = window.location.hash.substring(1);
-        if(hash && document.getElementById(hash)) {
-            showSection(hash);
-        }
-    });
-  </script>
-</body>
-</html>
+Visual system: **Luminescent Precision** (`luminescent_precision/DESIGN.md`) — dark zinc surfaces, emerald accents, Hanken Grotesk / Inter / JetBrains Mono.
